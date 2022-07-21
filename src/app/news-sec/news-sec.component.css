@@ -1,0 +1,221 @@
+.Topic-Heading {
+    color: rgb(0, 0, 0);
+    margin-left: 60px;
+    font-size: 33px;
+    font-family: 'Times', Courier, monospace;
+}
+
+.Heading-Bar {
+    margin-top: -50px;
+    margin-left: 3px;
+    width: 220px;
+}
+.Full-Panel
+{
+    height: 400px;
+    max-width:1280px;
+    margin-left:auto;
+    margin-right:auto;
+    display:flex;
+    overflow: hidden;
+}
+
+.Full-Panel img {
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 300px;
+    max-width: 100%;
+    object-fit: scale-down;
+    border: 2px solid black;
+
+}
+
+.Left {
+    width: 500px;
+    height: 100%;
+    flex-shrink: 0;
+}
+
+.Left p {
+    font-weight: bold;
+    font-family: 'Times', Courier, monospace;
+    font-size: 24px;
+    color: black;
+    text-align: center;
+}
+
+.Right
+{
+    flex: 1;
+    overflow: auto;
+    margin-left: 100px;
+}
+
+.Right h1 {
+
+    font-size: 19px;
+    padding-left: 50px;
+    overflow: hidden;
+    font-weight: bold;
+    color: rgb(35, 35, 34);
+    margin-bottom: 60px;
+}
+
+.Sep
+{
+    width: 800px;
+    margin-bottom: 50px;
+}
+
+.crop-image {
+    max-height: 300px;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.topbar {
+    position: relative;
+    margin: 0;
+    padding-right: 180px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    white-space: nowrap;
+    font-family: "Garamond";
+    background:  linear-gradient(90deg, rgba(231,231,240,1) 0%, rgba(0,0,0,1) 100%);
+}
+.top-header {
+    position: relative;
+    text-indent: 45px;
+    font-size: 55px;
+}
+.left-to-right {
+    display:inline-block;
+    margin-left: 45px;
+}
+
+.NavPanel
+{
+    padding-top: 20px;
+    display: inline-block;
+}
+
+body{
+    margin: 1px;
+}
+
+.NewsHead
+{
+position: relative;
+font-style: italic;
+font-size: 25px;
+font-family: 'Garamond', 'sans-serif', 'Gill Sans';
+margin-left: 30px;
+padding-top: 5px;
+text-align: center;
+}
+.MiddleBar
+{
+    position: relative;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 23px;
+}
+
+.Politics
+{
+    position: relative;
+    font-size: 17px;
+    padding: 15px 22px;
+    background-color: #000000;
+    color:  rgb(224, 224, 224);
+    text-shadow: 2px 2px 8px #000000;
+    margin-left: 370px;
+    width: 100px;
+    height: 55px;
+    font-family: 'Times', 'Courier', 'monospace';
+    text-decoration: none;
+
+}
+.Climate
+{
+    position: relative;
+    font-size: 17px;
+    padding: 15px 22px;
+    background-color: #000000;
+    color:  rgb(224, 224, 224);
+    text-shadow: 2px 2px 8px #000000;
+    margin-left: 25px;
+    width: 100px;
+    height: 55px;
+    font-family: 'Times', 'Courier', 'monospace';
+    text-decoration: none;
+}
+
+.Health
+{
+    position: relative;
+    font-size: 17px;
+    padding: 15px 22px;
+    background-color: #000000;
+    color: rgb(224, 224, 224);
+    text-shadow: 2px 2px 8px #000000;
+    margin-left: 25px;
+    width: 100px;
+    height: 55px;
+    font-family: 'Times', 'Courier', 'monospace';
+    text-decoration: none;
+}
+
+.USNews
+{
+    position: relative;
+    font-size: 17px;
+    padding: 15px 22px;
+    background-color: #000000;
+    color:  rgb(224, 224, 224);
+    text-shadow: 2px 2px 8px #000000;
+    margin-left: 25px;
+    width: 100px;
+    height: 55px;
+    font-family: 'Times', 'Courier', 'monospace';
+    text-decoration: none;
+}
+
+.Stories
+{
+    font-size: 17px;
+    background-color: #000000;
+    padding: 15px 22px;
+    color: rgb(224, 224, 224);
+    text-shadow: 2px 2px 8px #000000;
+    margin-left: 25px;
+    width: 100px;
+    height: 55px;   
+    font-family: 'Times', 'Courier', 'monospace';
+    text-decoration: none;
+}
+
+.Logo
+{
+    position: relative;
+   width: 150px;
+   height: 150px;
+   float: left;
+   margin-top: -7px;
+
+}
+
+.Tabs a {
+    position: relative;
+    font-size: 17px;
+    background-color: black;
+    color: white;
+    padding: 18px 29px;
+    margin-left: 25px;
+    width: 100px;
+    height: 55px; 
+    font-family: 'Times', Courier, monospace;
+    text-decoration: none;
+}
