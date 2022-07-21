@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { AppComponent } from '../app.component';
 
 @Component({
   selector: 'Header',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  @Input() app?: AppComponent;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  changePage(targetPage: string): void {
+    this.app!.page = targetPage;
   }
 
 }
