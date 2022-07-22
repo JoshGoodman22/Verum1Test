@@ -1,0 +1,53 @@
+.Sign-Up
+{
+    margin-left: 60px;
+    font-size: 46px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.Sign-Up-Dec
+{
+    margin-top: 10px;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 65px;
+}
+.Start-Form
+{
+    margin-left: 60px;
+    width: 435px;
+}
+.Guide
+{
+    display: flex;
+    font-size: 25px;
+    padding-right: 50px;
+    margin-left: 60px;
+}
+.Input-Box
+{
+    margin-top: 5px;
+    margin-left: 70px;
+    padding-top: 20px;
+    flex-direction: column;
+    font-size: 18px;
+    width: 375px;
+    background-color:  #f1f1f1;
+    height: 27px;
+    border: none;
+    
+}
+.Line-Form
+{
+    margin-top: 20px;
+}
+
+.Full-Info
+{
+    margin-top: 35px;
+}
+.Remember-Box
+{
+    margin-left: 90px;
+    margin-top: 20px;
+    
+}
