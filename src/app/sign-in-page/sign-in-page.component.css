@@ -1,7 +1,7 @@
 .Sign-Up
 {
     margin-left: 60px;
-    font-size: 46px;
+    font-size: 50px;
     font-family: 'Times New Roman', Times, serif;
 }
 .Sign-Up-Dec
@@ -50,4 +50,29 @@
     margin-left: 90px;
     margin-top: 20px;
     
+}
+.Create-Button
+{
+    flex-direction: column;
+}
+.Create-Account
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 19px;
+    height: 45px;
+    margin-left: 118px;
+    width: 270px;
+    margin-top: 25px;
+    background-color: #9fb8d0;
+}
+.motivate
+{
+    margin-left: 60px;
+    font-size: 29px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+}
+.motivate-div
+{
+    margin-top: -15px;
 }
