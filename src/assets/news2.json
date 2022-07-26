@@ -1,0 +1,52 @@
+{
+    "news": [
+        {
+            "title": "Soda Developments",
+            "mainImgDec": "Man was found alive hours before he was found dead",
+            "image": "CrimeEx.jpg",
+            "Subheadline1": "(BBC) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at.",
+            "Subheadline2": "(AP) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at.",
+            "Subheadline3": "(AP) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at."
+        },
+        {
+            "title": "Coffee News",
+            "mainImgDec": "Boris Johnson has trouble in class",
+            "image": "BorisSample.jpg",
+            "Subheadline1": "(BBC) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at.",
+            "Subheadline2": "(AP) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at.",
+            "Subheadline3": "(AP) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at."
+        },
+        {
+            "title": "Climate",
+            "mainImgDec": "The climate is doing great! no changes now!",
+            "image": "ClimateSample.jpg",
+            "Subheadline1": "(BBC) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at.",
+            "Subheadline2": "(AP) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at.",
+            "Subheadline3": "(AP) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at."
+        },
+        {
+            "title": "Magic is real ",
+            "mainImgDec": "(AP) Vaccines are simply just modern sense. Yet many Americans wont have it",
+            "image": "HealthSample.jpg",
+            "Subheadline1": "(BBC) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at.",
+            "Subheadline2": "(AP) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at.",
+            "Subheadline3": "(AP) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at."
+        },
+        {
+            "title": "U.S has great gun control",
+            "mainImgDec": "(AP) A women protest ROE v WADE SC case. Protect Abortion rights.",
+            "image": "USNEWSEXAMPLE2.jpg",
+            "Subheadline1": "(BBC) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at.",
+            "Subheadline2": "(AP) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at.",
+            "Subheadline3": "(AP) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at."
+        },
+        {
+            "title": "Immagrants are treated fairly everywhere!",
+            "mainImgDec": "(AP) Hear the stories of the millions of immigrants facing trouble at the borders.",
+            "image": "StoriesExample.jpg",
+            "Subheadline1": "(BBC) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at.",
+            "Subheadline2": "(AP) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at.",
+            "Subheadline3": "(AP) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at."
+        }
+    ]
+}
