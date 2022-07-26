@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet title="XSL_formatting" type="text/xsl" href="/shared/bsp/xsl/rss/nolsol.xsl"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:media="http://search.yahoo.com/mrss/">
+    <channel>
+        <title><![CDATA[BBC News - Home]]></title>
+        <description><![CDATA[BBC News - Home]]></description>
+        <link>https://www.bbc.co.uk/news/</link>
+        <image>
+            <url>https://news.bbcimg.co.uk/nol/shared/img/bbc_news_120x60.gif</url>
+            <title>BBC News - Home</title>
+            <link>https://www.bbc.co.uk/news/</link>
+        </image>
+        <generator>RSS for Node</generator>
+        <lastBuildDate>Tue, 26 Jul 2022 17:10:52 GMT</lastBuildDate>
+        <copyright><![CDATA[Copyright: (C) British Broadcasting Corporation, see http://news.bbc.co.uk/2/hi/help/rss/4498287.stm for terms and conditions of reuse.]]></copyright>
+        <language><![CDATA[en-gb]]></language>
+        <ttl>15</ttl>
+        <item>
+            <title><![CDATA[UK weather: Driest start to year in England since 1976]]></title>
+            <description><![CDATA[People are urged to use water wisely following a meeting of drought experts.]]></description>
+            <link>https://www.bbc.co.uk/news/uk-62303330?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/uk-62303330</guid>
+            <pubDate>Tue, 26 Jul 2022 15:05:06 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Briton Jack Fenton killed in Greek helicopter accident]]></title>
+            <description><![CDATA[Three people are arrested in connection with the death of 22-year-old Jack Fenton, from Kent.]]></description>
+            <link>https://www.bbc.co.uk/news/uk-england-kent-62309294?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/uk-england-kent-62309294</guid>
+            <pubDate>Tue, 26 Jul 2022 17:06:55 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Jim Fitton: Iraqi court overturns conviction of British geologist]]></title>
+            <description><![CDATA[Jim Fitton, jailed for 15 years in Iraq for alleged smuggling, will "soon be free", his lawyer says.]]></description>
+            <link>https://www.bbc.co.uk/news/uk-england-somerset-62310026?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/uk-england-somerset-62310026</guid>
+            <pubDate>Tue, 26 Jul 2022 16:02:25 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Tala Safwan: Egyptian TikToker held in Saudi over 'immoral' video]]></title>
+            <description><![CDATA[Tala Safwan, who has millions of followers, denies that her clip had lesbian undertones.]]></description>
+            <link>https://www.bbc.co.uk/news/world-middle-east-62289674?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/world-middle-east-62289674</guid>
+            <pubDate>Tue, 26 Jul 2022 15:50:21 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[IMF: UK set for slowest growth of G7 countries in 2023]]></title>
+            <description><![CDATA[The IMF cuts its UK forecast for 2023 and says the global economy is "teetering on the edge" of recession.]]></description>
+            <link>https://www.bbc.co.uk/news/business-62299490?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/business-62299490</guid>
+            <pubDate>Tue, 26 Jul 2022 16:40:32 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Boris Johnson says meeting with ex-KGB agent Alexander Lebedev was social event]]></title>
+            <description><![CDATA[Boris Johnson tells MPs officials did not need to be present at Alexander Lebedev event.]]></description>
+            <link>https://www.bbc.co.uk/news/uk-politics-62308217?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/uk-politics-62308217</guid>
+            <pubDate>Tue, 26 Jul 2022 14:18:38 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Heatwave: London family watched on TV as fire destroyed home]]></title>
+            <description><![CDATA[Michael Tubb first learned about the heatwave wildfire from a breaking news alert on his phone.]]></description>
+            <link>https://www.bbc.co.uk/news/uk-england-london-62307515?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/uk-england-london-62307515</guid>
+            <pubDate>Tue, 26 Jul 2022 14:20:52 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Covid origin studies say evidence points to Wuhan market]]></title>
+            <description><![CDATA[One of the researchers said he hoped the studies would correct the false theory that it came from a lab.]]></description>
+            <link>https://www.bbc.co.uk/news/science-environment-62307383?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/science-environment-62307383</guid>
+            <pubDate>Tue, 26 Jul 2022 15:32:23 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Russia to pull out of International Space Station]]></title>
+            <description><![CDATA[Moscow says it now wants to build its own station, ending more than 20 years of cooperation with the US.]]></description>
+            <link>https://www.bbc.co.uk/news/world-europe-62308069?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/world-europe-62308069</guid>
+            <pubDate>Tue, 26 Jul 2022 14:35:39 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Ukraine war: UK sanctions leaders of Ukraine breakaway regions]]></title>
+            <description><![CDATA[The UK has sanctioned Russian-imposed leaders of the so-called Donetsk and Luhansk People's Republics.]]></description>
+            <link>https://www.bbc.co.uk/news/uk-62308191?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/uk-62308191</guid>
+            <pubDate>Tue, 26 Jul 2022 15:08:03 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Mercury Prize: All you need to know about this year's nominees]]></title>
+            <description><![CDATA[The shortlist includes Harry Styles, Sam Fender, Little Simz, Wet Leg, Self Esteem and Nova Twins.]]></description>
+            <link>https://www.bbc.co.uk/news/entertainment-arts-62255561?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/entertainment-arts-62255561</guid>
+            <pubDate>Tue, 26 Jul 2022 14:13:46 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Freya the 600kg walrus causes a stir in Norway]]></title>
+            <description><![CDATA[The young female marine mammal has been spotted clambering onto boats to doze in the summer sun.]]></description>
+            <link>https://www.bbc.co.uk/news/world-europe-62303866?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/world-europe-62303866</guid>
+            <pubDate>Tue, 26 Jul 2022 14:07:22 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[The nine-year-old growing up in a circus]]></title>
+            <description><![CDATA[Talia Hawker and daughter Safiyah have lived in the circus since the nine-year-old was born]]></description>
+            <link>https://www.bbc.co.uk/news/uk-wales-62294662?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/uk-wales-62294662</guid>
+            <pubDate>Tue, 26 Jul 2022 05:04:17 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Euro 2022: Watch every England goal so far in 60 seconds]]></title>
+            <description><![CDATA[Watch every England goal so far at Euro 2022 with spectacular shots displaying both individual brilliance and teamwork as we await their semi-final fixture against Sweden.]]></description>
+            <link>https://www.bbc.co.uk/sport/av/football/62280319?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/sport/av/football/62280319</guid>
+            <pubDate>Tue, 26 Jul 2022 07:48:34 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Utah's Great Salt Lake is running out of water]]></title>
+            <description><![CDATA[This July, the largest salt water lake in the Western Hemisphere reached its lowest level ever recorded.]]></description>
+            <link>https://www.bbc.co.uk/news/world-us-canada-62300414?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/world-us-canada-62300414</guid>
+            <pubDate>Mon, 25 Jul 2022 23:39:16 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Wildfire tears through homes in Texas]]></title>
+            <description><![CDATA[At least 20 properties have been destroyed by the fire in Balch Springs, as the US battles extreme heat.]]></description>
+            <link>https://www.bbc.co.uk/news/world-us-canada-62303581?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/world-us-canada-62303581</guid>
+            <pubDate>Tue, 26 Jul 2022 09:35:04 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Commonwealth Games 2022: Complex emotions as past meets present]]></title>
+            <description><![CDATA[The word Commonwealth prompts conflicted feelings among some of Birmingham's residents.]]></description>
+            <link>https://www.bbc.co.uk/news/newsbeat-62298743?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/newsbeat-62298743</guid>
+            <pubDate>Mon, 25 Jul 2022 17:16:30 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Comic-Con: Five things we learned]]></title>
+            <description><![CDATA[Fans have been given an exclusive glimpse of footage from a host of new blockbusters.]]></description>
+            <link>https://www.bbc.co.uk/news/entertainment-arts-62287568?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/entertainment-arts-62287568</guid>
+            <pubDate>Mon, 25 Jul 2022 00:03:51 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Ukraine orphanages: Children tied up and men in cots]]></title>
+            <description><![CDATA[A BBC News investigation uncovers widespread abuse of disabled children and adults in institutions.]]></description>
+            <link>https://www.bbc.co.uk/news/disability-62226636?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/disability-62226636</guid>
+            <pubDate>Tue, 26 Jul 2022 16:00:07 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Rail strikes: When are they and which trains are running?]]></title>
+            <description><![CDATA[Thousands of train drivers and rail workers will go on strike in July and August.]]></description>
+            <link>https://www.bbc.co.uk/news/business-61634959?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/business-61634959</guid>
+            <pubDate>Tue, 26 Jul 2022 17:10:10 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[A1(M) Bowburn crash: Three-death smash remembered a year on]]></title>
+            <description><![CDATA[The BBC hears from some of those involved in a fatal crash caused by a lorry driver using his phone.]]></description>
+            <link>https://www.bbc.co.uk/news/uk-england-tyne-62235941?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/uk-england-tyne-62235941</guid>
+            <pubDate>Tue, 26 Jul 2022 04:55:32 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Russia sanctions: Can the world cope without its oil and gas?]]></title>
+            <description><![CDATA[Many countries are heavily dependent on Russian energy and will need to find new suppliers.]]></description>
+            <link>https://www.bbc.co.uk/news/58888451?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/58888451</guid>
+            <pubDate>Tue, 26 Jul 2022 13:53:13 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[How pop singer Dylan turned her Latitude disaster into triumph]]></title>
+            <description><![CDATA[The singer was at last year's festival when she learned her boyfriend was cheating on her - but it inspired her]]></description>
+            <link>https://www.bbc.co.uk/news/entertainment-arts-62285665?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/entertainment-arts-62285665</guid>
+            <pubDate>Tue, 26 Jul 2022 01:02:35 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[A mind-reading combat jet for the future]]></title>
+            <description><![CDATA[The Tempest fighter jet will have artificial intelligence tech to monitor and help the pilot.]]></description>
+            <link>https://www.bbc.co.uk/news/business-62289737?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/business-62289737</guid>
+            <pubDate>Mon, 25 Jul 2022 23:25:30 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[The election where the president wants the opposition to win]]></title>
+            <description><![CDATA[President Uhuru Kenyatta wants Raila Odinga to win next month's presidential poll and not his deputy.]]></description>
+            <link>https://www.bbc.co.uk/news/world-africa-62040402?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/world-africa-62040402</guid>
+            <pubDate>Mon, 25 Jul 2022 23:54:54 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[England to host 2026 Women's T20 World Cup reveals International Cricket Council]]></title>
+            <description><![CDATA[England will host the 2026 Women's T20 World Cup, with the International Cricket Council having announced four women's tournaments between 2024 and 2027.]]></description>
+            <link>https://www.bbc.co.uk/sport/cricket/62312192?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/sport/cricket/62312192</guid>
+            <pubDate>Tue, 26 Jul 2022 16:55:05 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Commonwealth Games 2022: Who are the home nation athletes to watch at Birmingham 2022?]]></title>
+            <description><![CDATA[BBC Sport highlights the key athletes to watch at the Birmingham 2022 Commonwealth Games from across the home nations.]]></description>
+            <link>https://www.bbc.co.uk/sport/commonwealth-games/61883536?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/sport/commonwealth-games/61883536</guid>
+            <pubDate>Tue, 26 Jul 2022 16:00:20 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Goodwood Cup: Kyprios beats Stradivarius to claim dramatic victory]]></title>
+            <description><![CDATA[Kyprios edges out Stradivarius to claim victory in a dramatic Goodwood Cup.]]></description>
+            <link>https://www.bbc.co.uk/sport/horse-racing/62309520?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/sport/horse-racing/62309520</guid>
+            <pubDate>Tue, 26 Jul 2022 15:38:15 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Commonwealth Games 2022: Tom Dean and Kem Cetinay play Top Trunks]]></title>
+            <description><![CDATA[Double Olympic champion Tom Dean and TV personality Kem Cetinay play a game of Top Trunks.]]></description>
+            <link>https://www.bbc.co.uk/sport/av/commonwealth-games/62280191?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/sport/av/commonwealth-games/62280191</guid>
+            <pubDate>Tue, 26 Jul 2022 07:37:51 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Euro 2022: England face Sweden in semi-final at Bramall Lane]]></title>
+            <description><![CDATA[England will attempt to reach the European Women's Championship final for a third time when they face 1984 winners Sweden on Tuesday.]]></description>
+            <link>https://www.bbc.co.uk/sport/football/62286243?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/sport/football/62286243</guid>
+            <pubDate>Mon, 25 Jul 2022 18:25:57 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Sarina Wiegman: England boss says 'mentality is good' for Euro 2022 semi-final with Sweden]]></title>
+            <description><![CDATA[England manager Sarina Wiegman says the "mentality has been really good" from her players as they prepare for a fourth successive major tournament semi-final on Tuesday.]]></description>
+            <link>https://www.bbc.co.uk/sport/football/62295182?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/sport/football/62295182</guid>
+            <pubDate>Mon, 25 Jul 2022 19:35:25 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Euro 2022: 'There is genuine belief Lionesses can end wait to reach a final']]></title>
+            <description><![CDATA[England are preparing for a fourth successive semi-final at a women's major tournament - but this time it feels different as a sense of optimism follows Sarina Wiegman's side.]]></description>
+            <link>https://www.bbc.co.uk/sport/football/62284634?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/sport/football/62284634</guid>
+            <pubDate>Tue, 26 Jul 2022 05:12:50 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Euro 2022: Leah Williamson's mum talks matchday nerves]]></title>
+            <description><![CDATA[Leah Williamson's mum Amanda says watching Euros games can feel as stressful as being on the pitch.]]></description>
+            <link>https://www.bbc.co.uk/news/newsbeat-62291707?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/newsbeat-62291707</guid>
+            <pubDate>Tue, 26 Jul 2022 08:25:17 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Euro 2022: How Sweden can hurt England in semi-final]]></title>
+            <description><![CDATA[Arsenal manager Jonas Eidevall discusses how his home nation Sweden could hurt England in their Euro 2022 semi-final.]]></description>
+            <link>https://www.bbc.co.uk/sport/football/62295189?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/sport/football/62295189</guid>
+            <pubDate>Tue, 26 Jul 2022 05:32:46 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Alessia Russo: The England super sub who could force her way into the starting line-up]]></title>
+            <description><![CDATA[Striker Alessia Russo used to be made to play in goal by her brothers but with her vital goals from the bench she has emerged as one of England's Euro 2022 stars.]]></description>
+            <link>https://www.bbc.co.uk/sport/football/62270560?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/sport/football/62270560</guid>
+            <pubDate>Mon, 25 Jul 2022 15:59:01 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Uefa Women's Euro 2022: How to follow on BBC television, radio, online & social media]]></title>
+            <description><![CDATA[The tournament from 6-31 July will give BBC audiences 24/7 access to all of the action and insight from the event across TV, radio and online.]]></description>
+            <link>https://www.bbc.co.uk/sport/football/61719384?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/sport/football/61719384</guid>
+            <pubDate>Thu, 09 Jun 2022 13:01:11 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[What to expect from Euro 2022 semi-finals: England v Sweden, Germany v France]]></title>
+            <description><![CDATA[Here is what to look out for in the two Euro 2022 semi-finals as hosts England play Sweden and Germany face France.]]></description>
+            <link>https://www.bbc.co.uk/sport/football/62279344?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/sport/football/62279344</guid>
+            <pubDate>Mon, 25 Jul 2022 09:12:51 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[France 1-0 Netherlands: Eve Perisset scores extra-time winner from the spot]]></title>
+            <description><![CDATA[France "are here to build history" after beating the Netherlands in extra time to reach the Euro 2022 semi-finals, says boss Corinne Diacre.]]></description>
+            <link>https://www.bbc.co.uk/sport/football/62274347?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/sport/football/62274347</guid>
+            <pubDate>Sat, 23 Jul 2022 22:55:21 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Euro 2022: Who made your England semi-final team to face Sweden?]]></title>
+            <description><![CDATA[Hosts England are into the semi-finals of the Euros, but who made your XI to face Sweden?]]></description>
+            <link>https://www.bbc.co.uk/sport/football/62266182?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/sport/football/62266182</guid>
+            <pubDate>Tue, 26 Jul 2022 05:56:46 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Euro 2022: Which countries are playing and where?]]></title>
+            <description><![CDATA[The Women's Euro 2022 Championship is taking place in England from 6-31 July. Take a look at which teams are playing at which stadiums.]]></description>
+            <link>https://www.bbc.co.uk/sport/football/61842685?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/sport/football/61842685</guid>
+            <pubDate>Mon, 27 Jun 2022 07:50:41 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Sweden 1-0 Belgium: Linda Sembrant hits dramatic 92nd-minute winner]]></title>
+            <description><![CDATA[Sweden left it late to beat Belgium and will need an "extremely good plan" against England in the Euro 2022 semi-finals, says boss Peter Gerhardsson.]]></description>
+            <link>https://www.bbc.co.uk/sport/football/62241465?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/sport/football/62241465</guid>
+            <pubDate>Fri, 22 Jul 2022 22:16:03 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Lucy Bronze: 'I learned a lot from 2019 World Cup heartache']]></title>
+            <description><![CDATA[Lucy Bronze was at the peak of her career in 2019 so when England lost to the USA in the World Cup semi-final it hit her hard.]]></description>
+            <link>https://www.bbc.co.uk/sport/football/62277162?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/sport/football/62277162</guid>
+            <pubDate>Sat, 23 Jul 2022 21:36:03 GMT</pubDate>
+        </item>
+    </channel>
+</rss>
