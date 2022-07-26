@@ -1,0 +1,52 @@
+{
+    "news": [
+        {
+            "title": "Trending",
+            "mainImgDec": "Man was found alive hours before he was found dead",
+            "image": "CrimeEx.jpg",
+            "Subheadline1": "(BBC) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at.",
+            "Subheadline2": "(AP) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at.",
+            "Subheadline3": "(AP) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at."
+        },
+        {
+            "title": "Politics",
+            "mainImgDec": "Boris Johnson has trouble in class",
+            "image": "BorisSample.jpg",
+            "Subheadline1": "(BBC) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at.",
+            "Subheadline2": "(AP) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at.",
+            "Subheadline3": "(AP) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at."
+        },
+        {
+            "title": "Climate",
+            "mainImgDec": "(AP) Large Dog sits on Ocean. He is a lonely sad dog. #SadDogs",
+            "image": "ClimateSample.jpg",
+            "Subheadline1": "(BBC) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at.",
+            "Subheadline2": "(AP) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at.",
+            "Subheadline3": "(AP) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at."
+        },
+        {
+            "title": "Health",
+            "mainImgDec": "(AP) Vaccines are simply just modern sense. Yet many Americans wont have it",
+            "image": "HealthSample.jpg",
+            "Subheadline1": "(BBC) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at.",
+            "Subheadline2": "(AP) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at.",
+            "Subheadline3": "(AP) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at."
+        },
+        {
+            "title": "U.S News",
+            "mainImgDec": "(AP) A women protest ROE v WADE SC case. Protect Abortion rights.",
+            "image": "USNEWSEXAMPLE2.jpg",
+            "Subheadline1": "(BBC) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at.",
+            "Subheadline2": "(AP) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at.",
+            "Subheadline3": "(AP) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at."
+        },
+        {
+            "title": "Stories",
+            "mainImgDec": "(AP) Hear the stories of the millions of immigrants facing trouble at the borders.",
+            "image": "StoriesExample.jpg",
+            "Subheadline1": "(BBC) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at.",
+            "Subheadline2": "(AP) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at.",
+            "Subheadline3": "(AP) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at."
+        }
+    ]
+}
