@@ -13,14 +13,7 @@
 <p class="NewsHead"> Eliminate misinformation.</p>
 
 <div *ngFor="let sec of data">
-  <NewsSec 
-    title="{{sec.title}}" 
-    mainImgDec="{{sec.mainImgDec}}" 
-    image="{{sec.image}}"
-    Subheadline1="{{sec.Subheadline1}}"
-    Subheadline2="{{sec.Subheadline2}}"
-    Subheadline3="{{sec.Subheadline3}}">
-  </NewsSec>
+  <NewsSec [newsData]=sec></NewsSec>
 </div>
 <!-- 
 
