@@ -29,6 +29,7 @@ export class NewsPageComponent implements OnInit {
   dataUrl: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/news.json";
   bbcRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/bbcrss.xml";
   reutersRss: string ="https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/reutersrss.xml";
+  unRss: string ="https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/unRss.xml";
   data: NewsSecData[] = [];
 
   constructor(private http: HttpClient) { }
@@ -50,9 +51,28 @@ export class NewsPageComponent implements OnInit {
       Subheadline3link: "Loading..."
     }
 
+    let politics: NewsSecData = 
+  {
+    title: "Trending",
+    mainImgDec: "Loading...",
+    mainImgDeclink: "Loading...",
+    image: "",
+    Subheadline1: "Loading...",
+    Subheadline1link: "Loading...",
+    Subheadline2: "Loading...",
+    Subheadline2link: "Loading...",
+    Subheadline3: "Loading...",
+    Subheadline3link: "Loading..."
+
+  }
+
     this.data.push(trending);
     this.getBBC(trending);
     this.getReuters(trending);
+    this.getUN(trending);
+
+    this.getReuters(politics);
+    this.getBBC(politics)
     // TODO: Add 2 more sources get??? get???
     // TODO: Add 2 more sections
 
@@ -81,6 +101,17 @@ export class NewsPageComponent implements OnInit {
       });
     });
   }
+
+
+  getUN(trending: NewsSecData) {
+    this.http.get(this.bbcRss, { responseType: "text" }).subscribe((data) => {
+      const parser = new xml2js.Parser({ strict: false, trim: true });
+      parser.parseString(data, (err, result) => {
+  
+      });
+    });
+  }
+
 
 
 }
