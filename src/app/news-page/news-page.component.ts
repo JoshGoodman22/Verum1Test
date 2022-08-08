@@ -1,6 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import * as xml2js from 'xml2js';
+import { TrendingLoader } from './TrendingLoader';
+import { PoliticsLoader } from './PoliticsLoader';
+import { ClimateLoader } from './ClimateLoader';
+import { HealthLoader } from './HealthLoader';
+import { USNewsLoader } from './USNewsLoader';
+import { StoriesLoader } from './StoriesLoader';
 
 interface NewsData {
   news: NewsSecData[];
@@ -27,9 +32,6 @@ export interface NewsSecData {
 export class NewsPageComponent implements OnInit {
 
   dataUrl: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/news.json";
-  bbcRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/bbcrss.xml";
-  reutersRss: string ="https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/reutersrss.xml";
-  unRss: string ="https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/unRss.xml";
   data: NewsSecData[] = [];
 
   constructor(private http: HttpClient) { }
@@ -38,79 +40,25 @@ export class NewsPageComponent implements OnInit {
     this.http.get<NewsData>(this.dataUrl).subscribe((data: NewsData) => {
       // this.data = data.news;
     });
-    let trending: NewsSecData = {
-      title: "Trending",
-      mainImgDec: "Loading...",
-      mainImgDeclink: "Loading...",
-      image: "",
-      Subheadline1: "Loading...",
-      Subheadline1link: "Loading...",
-      Subheadline2: "Loading...",
-      Subheadline2link: "Loading...",
-      Subheadline3: "Loading...",
-      Subheadline3link: "Loading..."
-    }
-
-    let politics: NewsSecData = 
-  {
-    title: "Trending",
-    mainImgDec: "Loading...",
-    mainImgDeclink: "Loading...",
-    image: "",
-    Subheadline1: "Loading...",
-    Subheadline1link: "Loading...",
-    Subheadline2: "Loading...",
-    Subheadline2link: "Loading...",
-    Subheadline3: "Loading...",
-    Subheadline3link: "Loading..."
+    let trending : TrendingLoader = new TrendingLoader(this.http);
+    let politics : PoliticsLoader = new PoliticsLoader(this.http);
+    let Climate : ClimateLoader = new ClimateLoader(this.http);
+    let Health : HealthLoader = new HealthLoader(this.http);
+    let USNews: USNewsLoader = new USNewsLoader(this.http);
+    let Stories: StoriesLoader = new StoriesLoader(this.http);
+    this.data.push(trending.loadData());
+    this.data.push(politics.loadData());
+    this.data.push(Climate.loadData());
+    this.data.push(Health.loadData());
+    this.data.push(USNews.loadData());
+    this.data.push(Stories.loadData());
 
   }
 
-    this.data.push(trending);
-    this.getBBC(trending);
-    this.getReuters(trending);
-    this.getUN(trending);
-
-    this.getReuters(politics);
-    this.getBBC(politics)
-    // TODO: Add 2 more sources get??? get???
-    // TODO: Add 2 more sections
-
-    // You can download an RSS feed using the curl command
-    // curl "URL HERE" > reutersrss.xml
-  }
-
-  getReuters(trending: NewsSecData) {
-    this.http.get(this.reutersRss, { responseType: "text" }).subscribe((data) => {
-      const parser = new xml2js.Parser({ strict: false, trim: true });
-      parser.parseString(data, (err, result) => {
-        console.log(result);
-
-        trending.mainImgDec = "Reuters" + result.RSS.CHANNEL[0].ITEM[0].TITLE[0];
-        trending.mainImgDeclink = result.RSS.CHANNEL[0].ITEM[0].LINK[0];
-      });
-    });
-  }
-
-  getBBC(trending: NewsSecData) {
-    this.http.get(this.bbcRss, { responseType: "text" }).subscribe((data) => {
-      const parser = new xml2js.Parser({ strict: false, trim: true });
-      parser.parseString(data, (err, result) => {
-          trending.Subheadline1 = "(BBC) " + result.RSS.CHANNEL[0].ITEM[0].TITLE[0];
-          trending.Subheadline1link = result.RSS.CHANNEL[0].ITEM[0].LINK[0];
-      });
-    });
-  }
-
-
-  getUN(trending: NewsSecData) {
-    this.http.get(this.bbcRss, { responseType: "text" }).subscribe((data) => {
-      const parser = new xml2js.Parser({ strict: false, trim: true });
-      parser.parseString(data, (err, result) => {
   
-      });
-    });
-  }
+
+  
+
 
 
 
