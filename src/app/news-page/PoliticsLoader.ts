@@ -4,9 +4,10 @@ import * as xml2js from 'xml2js';
 
 export class PoliticsLoader {
   bbcRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/bbcrss.xml";
-  reutersRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/reutersrss.xml";
+  reutersRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/eea8cb24710ebcb2458d5032fd326582c93ff891/src/assets/RSSFeeds/Trending/Politics/reutersPol.xml";
   unRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/3468250383fe7198881f2bc0ef3909a993bc2aa5/src/assets/RSSFeeds/Trending/unRss.xml";
-  nyRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/1cab3f26db9668906ca6c691384b0bb85f11d37b/nyRss.xml";
+  nyRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/NYPolitics.xml";
+  hillRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/RSSFeeds/Trending/Politics/HillPolitical.xml";
 
   constructor(private http: HttpClient) { }
 
@@ -24,10 +25,11 @@ export class PoliticsLoader {
       Subheadline3link: "Loading..."
     }
 
-    this.getBBC(data);
+    // this.getBBC(data);
     this.getReuters(data);
-    this.getUN(data);
-    this.getNY(data);
+    // this.getUN(data);
+    // this.getNY(data);
+    this.getHill(data);
 
     return data;
   }
@@ -36,40 +38,58 @@ export class PoliticsLoader {
     this.http.get(this.reutersRss, { responseType: "text" }).subscribe((data) => {
       const parser = new xml2js.Parser({ strict: false, trim: true });
       parser.parseString(data, (err, result) => {
-        newsData.mainImgDec = "Reuters" + result.RSS.CHANNEL[0].ITEM[0].TITLE[0];
+        newsData.mainImgDec = result.RSS.CHANNEL[0].ITEM[0].TITLE[0];
         newsData.mainImgDeclink = result.RSS.CHANNEL[0].ITEM[0].LINK[0];
+        newsData.Subheadline2 = result.RSS.CHANNEL[0].ITEM[1].TITLE[0];
+        newsData.Subheadline2link = result.RSS.CHANNEL[0].ITEM[1].LINK[0];
+
       });
     });
+  // }
+
+  // getBBC(newsData: NewsSecData) {
+  //   this.http.get(this.bbcRss, { responseType: "text" }).subscribe((data) => {
+  //     const parser = new xml2js.Parser({ strict: false, trim: true });
+  //     parser.parseString(data, (err, result) => {
+  //       newsData.Subheadline1 = "(BBC) " + result.RSS.CHANNEL[0].ITEM[0].TITLE[0];
+  //       newsData.Subheadline1link = result.RSS.CHANNEL[0].ITEM[0].LINK[0];
+  //     });
+  //   });
   }
 
-  getBBC(newsData: NewsSecData) {
-    this.http.get(this.bbcRss, { responseType: "text" }).subscribe((data) => {
+
+    // getUN(newsData: NewsSecData) {
+    //   this.http.get(this.unRss, { responseType: "text" }).subscribe((data) => {
+    //     const parser = new xml2js.Parser({ strict: false, trim: true });
+    //     parser.parseString(data, (err, result) => {
+    //       newsData.Subheadline2 = "(UN) " + result.RSS.CHANNEL[0].ITEM[0].TITLE[0];
+    //       newsData.Subheadline2link = result.RSS.CHANNEL[0].ITEM[0].LINK[0];
+    //     });
+    //   });
+    // }
+
+  // getNY(newsData: NewsSecData) {
+  //   this.http.get(this.nyRss, { responseType: "text" }).subscribe((data) => {
+  //     const parser = new xml2js.Parser({ strict: false, trim: true });
+  //     parser.parseString(data, (err, result) => {
+  //       newsData.Subheadline3 = "(NY Times) " + result.RSS.CHANNEL[0].ITEM[0].TITLE[0];
+  //       newsData.Subheadline3link = result.RSS.CHANNEL[0].ITEM[0].LINK[0];
+  //     });
+  //   });
+  // }
+
+  getHill(newsData: NewsSecData)
+  {
+    this.http.get(this.hillRss, { responseType: "text" }).subscribe((data) => {
       const parser = new xml2js.Parser({ strict: false, trim: true });
       parser.parseString(data, (err, result) => {
-        newsData.Subheadline1 = "(BBC) " + result.RSS.CHANNEL[0].ITEM[0].TITLE[0];
-        newsData.Subheadline1link = result.RSS.CHANNEL[0].ITEM[0].LINK[0];
-      });
-    });
-  }
-
-
-  getUN(newsData: NewsSecData) {
-    this.http.get(this.unRss, { responseType: "text" }).subscribe((data) => {
-      const parser = new xml2js.Parser({ strict: false, trim: true });
-      parser.parseString(data, (err, result) => {
-        newsData.Subheadline2 = "(UN) " + result.RSS.CHANNEL[0].ITEM[0].TITLE[0];
-        newsData.Subheadline2link = result.RSS.CHANNEL[0].ITEM[0].LINK[0];
-      });
-    });
-  }
-
-  getNY(newsData: NewsSecData) {
-    this.http.get(this.nyRss, { responseType: "text" }).subscribe((data) => {
-      const parser = new xml2js.Parser({ strict: false, trim: true });
-      parser.parseString(data, (err, result) => {
-        newsData.Subheadline3 = "(NY Times) " + result.RSS.CHANNEL[0].ITEM[0].TITLE[0];
+        newsData.Subheadline3 = "(The Hill) " + result.RSS.CHANNEL[0].ITEM[0].TITLE[0];
         newsData.Subheadline3link = result.RSS.CHANNEL[0].ITEM[0].LINK[0];
+        newsData.Subheadline1 = "(The Hill) " + result.RSS.CHANNEL[0].ITEM[1].TITLE[0];
+        newsData.Subheadline1link = result.RSS.CHANNEL[0].ITEM[1].LINK[0];
       });
-    });
+      });
+    };
+
   }
-}
+

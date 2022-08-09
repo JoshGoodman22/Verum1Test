@@ -36,7 +36,7 @@ export class TrendingLoader {
     this.http.get(this.reutersRss, { responseType: "text" }).subscribe((data) => {
       const parser = new xml2js.Parser({ strict: false, trim: true });
       parser.parseString(data, (err, result) => {
-        newsData.mainImgDec = "Reuters" + result.RSS.CHANNEL[0].ITEM[0].TITLE[0];
+        newsData.mainImgDec = result.RSS.CHANNEL[0].ITEM[0].TITLE[0];
         newsData.mainImgDeclink = result.RSS.CHANNEL[0].ITEM[0].LINK[0];
       });
     });
