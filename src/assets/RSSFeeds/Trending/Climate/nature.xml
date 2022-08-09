@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://purl.org/rss/1.0/" xmlns:admin="http://webns.net/mvcb/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">
+    <channel rdf:about="http://feeds.nature.com/nclimate/rss/current">
+        <title>Nature Climate Change - AOP - nature.com science feeds</title>
+        <description></description>
+        <link>http://feeds.nature.com/nclimate/rss/current</link>
+        <admin:generatorAgent rdf:resource="http://www.nature.com/"/>
+        <admin:errorReportsTo rdf:resource="mailto:feedback@nature.com"/>
+        <dc:publisher>Nature Publishing Group</dc:publisher>
+        <dc:language>en</dc:language>
+        <dc:rights>© 2022 Macmillan Publishers Limited, part of Springer Nature. All rights reserved.</dc:rights>
+        <prism:publicationName>Nature Climate Change</prism:publicationName>
+        
+        
+        <prism:copyright>© 2022 Macmillan Publishers Limited, part of Springer Nature. All rights reserved.</prism:copyright>
+        <prism:rightsAgent>permissions@nature.com</prism:rightsAgent>
+        <image rdf:resource="https://www.nature.com/uploads/product/nclimate/rss.png"/>
+        <items>
+            <rdf:Seq>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41558-022-01426-1"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41558-022-01442-1"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41558-022-01449-8"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41558-022-01447-w"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41558-022-01450-1"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41558-022-01448-9"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41558-022-01434-1"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41558-022-01462-x"/>
+                
+            </rdf:Seq>
+        </items>
+    </channel>
+    <image rdf:about="https://www.nature.com/uploads/product/nclimate/rss.png">
+        <title>Nature Climate Change</title>
+        <url>https://www.nature.com/uploads/product/nclimate/rss.png</url>
+        <link>http://feeds.nature.com/nclimate/rss/current</link>
+    </image>
+    
+        <item rdf:about="https://www.nature.com/articles/s41558-022-01426-1">
+            <title><![CDATA[Over half of known human pathogenic diseases can be aggravated by climate change]]></title>
+            <link>https://www.nature.com/articles/s41558-022-01426-1</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Climate Change, Published online: 08 August 2022; <a href="https://www.nature.com/articles/s41558-022-01426-1">doi:10.1038/s41558-022-01426-1</a></p>A systematic review shows that >58% of infectious diseases confronted by humanity, via 1,006 unique pathways, have at some point been affected by climatic hazards sensitive to GHGs. These results highlight the mounting challenge for adaption and the urgent need to reduce GHG emissions.]]></content:encoded>
+            <dc:title><![CDATA[Over half of known human pathogenic diseases can be aggravated by climate change]]></dc:title>
+            <dc:creator>Camilo Mora</dc:creator><dc:creator>Tristan McKenzie</dc:creator><dc:creator>Isabella M. Gaw</dc:creator><dc:creator>Jacqueline M. Dean</dc:creator><dc:creator>Hannah von Hammerstein</dc:creator><dc:creator>Tabatha A. Knudson</dc:creator><dc:creator>Renee O. Setter</dc:creator><dc:creator>Charlotte Z. Smith</dc:creator><dc:creator>Kira M. Webster</dc:creator><dc:creator>Jonathan A. Patz</dc:creator><dc:creator>Erik C. Franklin</dc:creator>
+            <dc:identifier>doi:10.1038/s41558-022-01426-1</dc:identifier>
+            <dc:source>Nature Climate Change, Published online: 2022-08-08; | doi:10.1038/s41558-022-01426-1</dc:source>
+            <dc:date>2022-08-08</dc:date>
+            <prism:publicationName>Nature Climate Change</prism:publicationName>
+            <prism:doi>10.1038/s41558-022-01426-1</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41558-022-01426-1</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41558-022-01442-1">
+            <title><![CDATA[The proliferation of carbon labels]]></title>
+            <link>https://www.nature.com/articles/s41558-022-01442-1</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Climate Change, Published online: 04 August 2022; <a href="https://www.nature.com/articles/s41558-022-01442-1">doi:10.1038/s41558-022-01442-1</a></p>The proliferation of carbon labels]]></content:encoded>
+            <dc:title><![CDATA[The proliferation of carbon labels]]></dc:title>
+            <dc:creator>Dror Etzion</dc:creator>
+            <dc:identifier>doi:10.1038/s41558-022-01442-1</dc:identifier>
+            <dc:source>Nature Climate Change, Published online: 2022-08-04; | doi:10.1038/s41558-022-01442-1</dc:source>
+            <dc:date>2022-08-04</dc:date>
+            <prism:publicationName>Nature Climate Change</prism:publicationName>
+            <prism:doi>10.1038/s41558-022-01442-1</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41558-022-01442-1</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41558-022-01449-8">
+            <title><![CDATA[Washing away the ground]]></title>
+            <link>https://www.nature.com/articles/s41558-022-01449-8</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Climate Change, Published online: 02 August 2022; <a href="https://www.nature.com/articles/s41558-022-01449-8">doi:10.1038/s41558-022-01449-8</a></p>Washing away the ground]]></content:encoded>
+            <dc:title><![CDATA[Washing away the ground]]></dc:title>
+            <dc:creator>Jasper Franke</dc:creator>
+            <dc:identifier>doi:10.1038/s41558-022-01449-8</dc:identifier>
+            <dc:source>Nature Climate Change, Published online: 2022-08-02; | doi:10.1038/s41558-022-01449-8</dc:source>
+            <dc:date>2022-08-02</dc:date>
+            <prism:publicationName>Nature Climate Change</prism:publicationName>
+            <prism:doi>10.1038/s41558-022-01449-8</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41558-022-01449-8</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41558-022-01447-w">
+            <title><![CDATA[Warmth signals male growth]]></title>
+            <link>https://www.nature.com/articles/s41558-022-01447-w</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Climate Change, Published online: 02 August 2022; <a href="https://www.nature.com/articles/s41558-022-01447-w">doi:10.1038/s41558-022-01447-w</a></p>Warmth signals male growth]]></content:encoded>
+            <dc:title><![CDATA[Warmth signals male growth]]></dc:title>
+            <dc:creator>Tegan Armarego-Marriott</dc:creator>
+            <dc:identifier>doi:10.1038/s41558-022-01447-w</dc:identifier>
+            <dc:source>Nature Climate Change, Published online: 2022-08-02; | doi:10.1038/s41558-022-01447-w</dc:source>
+            <dc:date>2022-08-02</dc:date>
+            <prism:publicationName>Nature Climate Change</prism:publicationName>
+            <prism:doi>10.1038/s41558-022-01447-w</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41558-022-01447-w</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41558-022-01450-1">
+            <title><![CDATA[Impacts on tourism demand]]></title>
+            <link>https://www.nature.com/articles/s41558-022-01450-1</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Climate Change, Published online: 02 August 2022; <a href="https://www.nature.com/articles/s41558-022-01450-1">doi:10.1038/s41558-022-01450-1</a></p>Impacts on tourism demand]]></content:encoded>
+            <dc:title><![CDATA[Impacts on tourism demand]]></dc:title>
+            <dc:creator>Carmen Dayrell</dc:creator>
+            <dc:identifier>doi:10.1038/s41558-022-01450-1</dc:identifier>
+            <dc:source>Nature Climate Change, Published online: 2022-08-02; | doi:10.1038/s41558-022-01450-1</dc:source>
+            <dc:date>2022-08-02</dc:date>
+            <prism:publicationName>Nature Climate Change</prism:publicationName>
+            <prism:doi>10.1038/s41558-022-01450-1</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41558-022-01450-1</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41558-022-01448-9">
+            <title><![CDATA[Net greenhouse gas source]]></title>
+            <link>https://www.nature.com/articles/s41558-022-01448-9</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Climate Change, Published online: 02 August 2022; <a href="https://www.nature.com/articles/s41558-022-01448-9">doi:10.1038/s41558-022-01448-9</a></p>Net greenhouse gas source]]></content:encoded>
+            <dc:title><![CDATA[Net greenhouse gas source]]></dc:title>
+            <dc:creator>Martina Grecequet</dc:creator>
+            <dc:identifier>doi:10.1038/s41558-022-01448-9</dc:identifier>
+            <dc:source>Nature Climate Change, Published online: 2022-08-02; | doi:10.1038/s41558-022-01448-9</dc:source>
+            <dc:date>2022-08-02</dc:date>
+            <prism:publicationName>Nature Climate Change</prism:publicationName>
+            <prism:doi>10.1038/s41558-022-01448-9</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41558-022-01448-9</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41558-022-01434-1">
+            <title><![CDATA[Big homes hinder emission cuts]]></title>
+            <link>https://www.nature.com/articles/s41558-022-01434-1</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Climate Change, Published online: 02 August 2022; <a href="https://www.nature.com/articles/s41558-022-01434-1">doi:10.1038/s41558-022-01434-1</a></p>US homes are large by any international standards. Full grid decarbonization and electrification of residential energy uses — along with extensive house renovation — are all required, but smaller homes could make this much easier to deliver.]]></content:encoded>
+            <dc:title><![CDATA[Big homes hinder emission cuts]]></dc:title>
+            <dc:creator>André Cabrera Serrenho</dc:creator>
+            <dc:identifier>doi:10.1038/s41558-022-01434-1</dc:identifier>
+            <dc:source>Nature Climate Change, Published online: 2022-08-02; | doi:10.1038/s41558-022-01434-1</dc:source>
+            <dc:date>2022-08-02</dc:date>
+            <prism:publicationName>Nature Climate Change</prism:publicationName>
+            <prism:doi>10.1038/s41558-022-01434-1</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41558-022-01434-1</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41558-022-01462-x">
+            <title><![CDATA[Heating up]]></title>
+            <link>https://www.nature.com/articles/s41558-022-01462-x</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Climate Change, Published online: 02 August 2022; <a href="https://www.nature.com/articles/s41558-022-01462-x">doi:10.1038/s41558-022-01462-x</a></p>Each year weather records are being broken around the globe; this boreal summer has seen heat records fall across Europe, America and Central Asia. These discernible effects of climate change cannot be ignored, as combined with global issues they endanger society and well-being.]]></content:encoded>
+            <dc:title><![CDATA[Heating up]]></dc:title>
+            
+            <dc:identifier>doi:10.1038/s41558-022-01462-x</dc:identifier>
+            <dc:source>Nature Climate Change, Published online: 2022-08-02; | doi:10.1038/s41558-022-01462-x</dc:source>
+            <dc:date>2022-08-02</dc:date>
+            <prism:publicationName>Nature Climate Change</prism:publicationName>
+            <prism:doi>10.1038/s41558-022-01462-x</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41558-022-01462-x</prism:url>
+        </item>
+    
+</rdf:RDF>
