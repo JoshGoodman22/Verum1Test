@@ -3,9 +3,9 @@ import { NewsSecData } from "./news-page.component";
 import * as xml2js from 'xml2js';
 
 export class TrendingLoader {
-  bbcRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/bbcrss.xml";
-  reutersRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/reutersrss.xml";
-  unRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/unRss.xml";
+  bbcRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/d28abc14d3a4f0d8bb1c6b34c5f6c914276f727b/src/assets/RSSFeeds/Trending/TrendBBCrss.xml";
+  reutersRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/3468250383fe7198881f2bc0ef3909a993bc2aa5/src/assets/RSSFeeds/Trending/reutersrss.xml";
+  unRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/3468250383fe7198881f2bc0ef3909a993bc2aa5/src/assets/RSSFeeds/Trending/unRss.xml";
   nyRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/1cab3f26db9668906ca6c691384b0bb85f11d37b/nyRss.xml";
 
   constructor(private http: HttpClient) { }
