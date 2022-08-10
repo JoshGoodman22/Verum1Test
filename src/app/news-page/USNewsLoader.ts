@@ -6,7 +6,7 @@ export class USNewsLoader {
   bbcRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/bbcrss.xml";
   reutersRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/3468250383fe7198881f2bc0ef3909a993bc2aa5/src/assets/RSSFeeds/Trending/reutersrss.xml";
   unRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/3468250383fe7198881f2bc0ef3909a993bc2aa5/src/assets/RSSFeeds/Trending/unRss.xml";
-  nyRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/1cab3f26db9668906ca6c691384b0bb85f11d37b/nyRss.xml";
+  econRss: string= "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/RSSFeeds/Trending/US%20News/USecon.xml";
 
   constructor(private http: HttpClient) { }
 
@@ -27,7 +27,7 @@ export class USNewsLoader {
     this.getBBC(data);
     this.getReuters(data);
     this.getUN(data);
-    this.getNY(data);
+    this.getEcon(data)
 
     return data;
   }
@@ -36,8 +36,8 @@ export class USNewsLoader {
     this.http.get(this.reutersRss, { responseType: "text" }).subscribe((data) => {
       const parser = new xml2js.Parser({ strict: false, trim: true });
       parser.parseString(data, (err, result) => {
-        newsData.mainImgDec = "Reuters" + result.RSS.CHANNEL[0].ITEM[0].TITLE[0];
-        newsData.mainImgDeclink = result.RSS.CHANNEL[0].ITEM[0].LINK[0];
+        newsData.Subheadline3 = "Reuters" + result.RSS.CHANNEL[0].ITEM[0].TITLE[0];
+        newsData.Subheadline3= result.RSS.CHANNEL[0].ITEM[0].LINK[0];
       });
     });
   }
@@ -63,12 +63,14 @@ export class USNewsLoader {
     });
   }
 
-  getNY(newsData: NewsSecData) {
-    this.http.get(this.nyRss, { responseType: "text" }).subscribe((data) => {
+  getEcon(newsData: NewsSecData) {
+    this.http.get(this.econRss, { responseType: "text" }).subscribe((data) => {
       const parser = new xml2js.Parser({ strict: false, trim: true });
       parser.parseString(data, (err, result) => {
-        newsData.Subheadline3 = "(NY Times) " + result.RSS.CHANNEL[0].ITEM[0].TITLE[0];
-        newsData.Subheadline3link = result.RSS.CHANNEL[0].ITEM[0].LINK[0];
+        newsData.mainImgDec = "(The Economist) " + result.RSS.CHANNEL[0].ITEM[0].TITLE[0];
+        newsData.mainImgDeclink = result.RSS.CHANNEL[0].ITEM[0].LINK[0];
+        newsData.Subheadline2 = "(The Economist) " + result.RSS.CHANNEL[0].ITEM[1].TITLE[0];
+        newsData.Subheadline2link = result.RSS.CHANNEL[0].ITEM[1].LINK[0];
       });
     });
   }
