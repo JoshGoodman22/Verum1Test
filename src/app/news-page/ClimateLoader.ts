@@ -7,7 +7,7 @@ export class ClimateLoader {
   reutersRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/RSSFeeds/Trending/Climate/ReutersClimate.xml";
   unRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/RSSFeeds/Trending/Climate/unCLimate.xml";
   nyRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/1cab3f26db9668906ca6c691384b0bb85f11d37b/nyRss.xml";
-  natureRss: string = ""; 
+  natureRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/RSSFeeds/Trending/Climate/nature.xml"; 
 
   constructor(private http: HttpClient) { }
 
@@ -28,7 +28,8 @@ export class ClimateLoader {
     this.getBBC(data);
     this.getReuters(data);
     this.getUN(data);
-    this.getNY(data);
+    // this.getNY(data);
+    this.getNature(data);
 
     return data;
   }
@@ -60,16 +61,29 @@ export class ClimateLoader {
       parser.parseString(data, (err, result) => {
         newsData.mainImgDec = "(UN) " + result.RSS.CHANNEL[0].ITEM[0].TITLE[0];
         newsData.mainImgDeclink = result.RSS.CHANNEL[0].ITEM[0].LINK[0];
+        newsData.Subheadline3 = "(UN) " + result.RSS.CHANNEL[0].ITEM[1].TITLE[0];
+        newsData.Subheadline3link = result.RSS.CHANNEL[0].ITEM[1].LINK[0];
       });
     });
   }
 
-  getNY(newsData: NewsSecData) {
-    this.http.get(this.nyRss, { responseType: "text" }).subscribe((data) => {
+  // getNY(newsData: NewsSecData) {
+  //   this.http.get(this.nyRss, { responseType: "text" }).subscribe((data) => {
+  //     const parser = new xml2js.Parser({ strict: false, trim: true });
+  //     parser.parseString(data, (err, result) => {
+  //       newsData.Subheadline3 = "(NY Times) " + result.RSS.CHANNEL[0].ITEM[0].TITLE[0];
+  //       newsData.Subheadline3link = result.RSS.CHANNEL[0].ITEM[0].LINK[0];
+  //     });
+  //   });
+  // }
+
+  getNature(newsData: NewsSecData) {
+    this.http.get(this.natureRss, { responseType: "text" }).subscribe((data) => {
       const parser = new xml2js.Parser({ strict: false, trim: true });
       parser.parseString(data, (err, result) => {
-        newsData.Subheadline3 = "(NY Times) " + result.RSS.CHANNEL[0].ITEM[0].TITLE[0];
-        newsData.Subheadline3link = result.RSS.CHANNEL[0].ITEM[0].LINK[0];
+        newsData.Subheadline1 = "(Nature)" + result.RSS.CHANNEL[0].ITEM[0].TITLE[0];
+        newsData.Subheadline1link = result.RSS.CHANNEL[0].ITEM[0].LINK[0];
+        //  build program to get headline for this one
       });
     });
   }
