@@ -12,7 +12,7 @@ export class StoriesLoader {
 
   loadData() {
     let data: NewsSecData = {
-      title: "Stories",
+      title: "Global Stories",
       mainImgDec: "Loading...",
       mainImgDeclink: "Loading...",
       image: "",

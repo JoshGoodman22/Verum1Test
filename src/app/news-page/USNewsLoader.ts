@@ -4,7 +4,7 @@ import * as xml2js from 'xml2js';
 
 export class USNewsLoader {
   bbcRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/bbcrss.xml";
-  reutersRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/3468250383fe7198881f2bc0ef3909a993bc2aa5/src/assets/RSSFeeds/Trending/reutersrss.xml";
+  reutersRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/RSSFeeds/Trending/US%20News/reutersUSN.xml";
   unRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/3468250383fe7198881f2bc0ef3909a993bc2aa5/src/assets/RSSFeeds/Trending/unRss.xml";
   econRss: string= "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/RSSFeeds/Trending/US%20News/USecon.xml";
 
@@ -36,8 +36,8 @@ export class USNewsLoader {
     this.http.get(this.reutersRss, { responseType: "text" }).subscribe((data) => {
       const parser = new xml2js.Parser({ strict: false, trim: true });
       parser.parseString(data, (err, result) => {
-        newsData.Subheadline3 = "Reuters" + result.RSS.CHANNEL[0].ITEM[0].TITLE[0];
-        newsData.Subheadline3= result.RSS.CHANNEL[0].ITEM[0].LINK[0];
+        newsData.Subheadline3 = result.RSS.CHANNEL[0].ITEM[1].TITLE[0];
+        newsData.Subheadline3link= result.RSS.CHANNEL[0].ITEM[1].LINK[0];
       });
     });
   }
