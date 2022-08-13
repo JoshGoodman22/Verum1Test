@@ -6,7 +6,7 @@ export class HealthLoader {
   bbcRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/bbcrss.xml";
   reutersRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/RSSFeeds/Trending/Health/reutershealth.xml";
   unRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/RSSFeeds/Trending/Health/UNhealth.xml";
-  nyRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/1cab3f26db9668906ca6c691384b0bb85f11d37b/nyRss.xml";
+  cbsRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/RSSFeeds/Trending/Health/CBShealth.xml";
 
   constructor(private http: HttpClient) { }
 
@@ -27,7 +27,7 @@ export class HealthLoader {
     this.getBBC(data);
     this.getReuters(data);
     this.getUN(data);
-    this.getNY(data);
+    this.getCBS(data);
 
     return data;
   }
@@ -63,11 +63,11 @@ export class HealthLoader {
     });
   }
 
-  getNY(newsData: NewsSecData) {
-    this.http.get(this.nyRss, { responseType: "text" }).subscribe((data) => {
+  getCBS(newsData: NewsSecData) {
+    this.http.get(this.cbsRss, { responseType: "text" }).subscribe((data) => {
       const parser = new xml2js.Parser({ strict: false, trim: true });
       parser.parseString(data, (err, result) => {
-        newsData.Subheadline3 = "(NY Times) " + result.RSS.CHANNEL[0].ITEM[0].TITLE[0];
+        newsData.Subheadline3 = "(CBS) " + result.RSS.CHANNEL[0].ITEM[0].TITLE[0];
         newsData.Subheadline3link = result.RSS.CHANNEL[0].ITEM[0].LINK[0];
       });
     });
