@@ -5,7 +5,7 @@ import * as xml2js from 'xml2js';
 export class StoriesLoader {
   hrRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/RSSFeeds/Trending/Global%20Stories/HR.xml";
   migrantsRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/RSSFeeds/Trending/Global%20Stories/Migrants.xml";
-  unRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/3468250383fe7198881f2bc0ef3909a993bc2aa5/src/assets/RSSFeeds/Trending/unRss.xml";
+  haRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/RSSFeeds/Trending/Global%20Stories/HA.xml";
   womenRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/RSSFeeds/Trending/Global%20Stories/Women.xml";
 
   constructor(private http: HttpClient) { }
@@ -26,7 +26,7 @@ export class StoriesLoader {
 
     this.getHumanRights(data);
     this.getMigrants(data);
-    this.getUN(data);
+    this.getAid(data);
     this.getWomen(data);
 
     return data;
@@ -53,11 +53,11 @@ export class StoriesLoader {
   }
 
 
-  getUN(newsData: NewsSecData) {
-    this.http.get(this.unRss, { responseType: "text" }).subscribe((data) => {
+  getAid(newsData: NewsSecData) {
+    this.http.get(this.haRss, { responseType: "text" }).subscribe((data) => {
       const parser = new xml2js.Parser({ strict: false, trim: true });
       parser.parseString(data, (err, result) => {
-        newsData.Subheadline2 = "(UN) " + result.RSS.CHANNEL[0].ITEM[0].TITLE[0];
+        newsData.Subheadline2 = "(Humanitarian Aid) " + result.RSS.CHANNEL[0].ITEM[0].TITLE[0];
         newsData.Subheadline2link = result.RSS.CHANNEL[0].ITEM[0].LINK[0];
       });
     });
