@@ -6,7 +6,8 @@ export class TrendingLoader {
   bbcRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/d28abc14d3a4f0d8bb1c6b34c5f6c914276f727b/src/assets/RSSFeeds/Trending/TrendBBCrss.xml";
   reutersRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/3468250383fe7198881f2bc0ef3909a993bc2aa5/src/assets/RSSFeeds/Trending/reutersrss.xml";
   unRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/3468250383fe7198881f2bc0ef3909a993bc2aa5/src/assets/RSSFeeds/Trending/unRss.xml";
-  nyRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/1cab3f26db9668906ca6c691384b0bb85f11d37b/nyRss.xml";
+  cbsRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/RSSFeeds/Trending/CBSTrend.xml";
+
 
   constructor(private http: HttpClient) { }
 
@@ -27,7 +28,7 @@ export class TrendingLoader {
     this.getBBC(data);
     this.getReuters(data);
     this.getUN(data);
-    this.getNY(data);
+    this.getCBS(data);
 
     return data;
   }
@@ -63,12 +64,12 @@ export class TrendingLoader {
     });
   }
 
-  getNY(newsData: NewsSecData) {
-    this.http.get(this.nyRss, { responseType: "text" }).subscribe((data) => {
+  getCBS(newsData: NewsSecData) {
+    this.http.get(this.cbsRss, { responseType: "text" }).subscribe((data) => {
       const parser = new xml2js.Parser({ strict: false, trim: true });
       parser.parseString(data, (err, result) => {
-        newsData.Subheadline3 = "(NY Times) " + result.RSS.CHANNEL[0].ITEM[0].TITLE[0];
-        newsData.Subheadline3link = result.RSS.CHANNEL[0].ITEM[0].LINK[0];
+        newsData.Subheadline3 = "(CBS) " + result.RSS.CHANNEL[0].ITEM[2].TITLE[0];
+        newsData.Subheadline3link = result.RSS.CHANNEL[0].ITEM[2].LINK[0];
       });
     });
   }
