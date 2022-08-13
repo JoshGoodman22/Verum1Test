@@ -3,7 +3,7 @@ import { NewsSecData } from "./news-page.component";
 import * as xml2js from 'xml2js';
 
 export class USNewsLoader {
-  bbcRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/bbcrss.xml";
+  cbsRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/RSSFeeds/Trending/US%20News/cbsUS.xml";
   reutersRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/RSSFeeds/Trending/US%20News/reutersUSN.xml";
   unRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/3468250383fe7198881f2bc0ef3909a993bc2aa5/src/assets/RSSFeeds/Trending/unRss.xml";
   econRss: string= "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/RSSFeeds/Trending/US%20News/USecon.xml";
@@ -24,10 +24,11 @@ export class USNewsLoader {
       Subheadline3link: "Loading..."
     }
 
-    this.getBBC(data);
+    // this.getBBC(data);
     this.getReuters(data);
     this.getUN(data);
-    this.getEcon(data)
+    this.getEcon(data);
+    this.getCBS(data)
 
     return data;
   }
@@ -42,11 +43,11 @@ export class USNewsLoader {
     });
   }
 
-  getBBC(newsData: NewsSecData) {
-    this.http.get(this.bbcRss, { responseType: "text" }).subscribe((data) => {
+  getCBS(newsData: NewsSecData) {
+    this.http.get(this.cbsRss, { responseType: "text" }).subscribe((data) => {
       const parser = new xml2js.Parser({ strict: false, trim: true });
       parser.parseString(data, (err, result) => {
-        newsData.Subheadline1 = "(BBC) " + result.RSS.CHANNEL[0].ITEM[0].TITLE[0];
+        newsData.Subheadline1 = "(CBS) " + result.RSS.CHANNEL[0].ITEM[0].TITLE[0];
         newsData.Subheadline1link = result.RSS.CHANNEL[0].ITEM[0].LINK[0];
       });
     });
