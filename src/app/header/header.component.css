@@ -15,7 +15,7 @@
 }
 .left-to-right {
     display:inline-block;
-    margin-left: 45px;
+    margin-left: 6px;
 }
 
 .NavPanel
@@ -124,10 +124,11 @@ text-align: center;
 .Logo
 {
     position: relative;
-   width: 150px;
-   height: 150px;
+   width: 183px;
+   height: 183px;
    float: left;
-   margin-top: -7px;
+   margin-top: 20px;
+   margin-left: 18px;
 
 }
 
@@ -150,4 +151,9 @@ text-align: center;
     margin-top: 0px;
     text-decoration: underline;
     font-style: italic;
+}
+
+.NavPanelCon
+{
+    margin-top: 50px;
 }
