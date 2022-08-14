@@ -3,7 +3,7 @@ import { NewsSecData } from "./news-page.component";
 import * as xml2js from 'xml2js';
 
 export class HealthLoader {
-  bbcRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/bbcrss.xml";
+  axRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/RSSFeeds/Trending/Health/axioshealth.xml";
   reutersRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/RSSFeeds/Trending/Health/reutershealth.xml";
   unRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/RSSFeeds/Trending/Health/UNhealth.xml";
   cbsRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/RSSFeeds/Trending/Health/CBShealth.xml";
@@ -24,7 +24,7 @@ export class HealthLoader {
       Subheadline3link: "Loading..."
     }
 
-    this.getBBC(data);
+    this.getAxios(data);
     this.getReuters(data);
     this.getUN(data);
     this.getCBS(data);
@@ -42,11 +42,11 @@ export class HealthLoader {
     });
   }
 
-  getBBC(newsData: NewsSecData) {
-    this.http.get(this.bbcRss, { responseType: "text" }).subscribe((data) => {
+  getAxios(newsData: NewsSecData) {
+    this.http.get(this.axRss, { responseType: "text" }).subscribe((data) => {
       const parser = new xml2js.Parser({ strict: false, trim: true });
       parser.parseString(data, (err, result) => {
-        newsData.Subheadline1 = "(BBC) " + result.RSS.CHANNEL[0].ITEM[0].TITLE[0];
+        newsData.Subheadline1 = "(Axios) " + result.RSS.CHANNEL[0].ITEM[0].TITLE[0];
         newsData.Subheadline1link = result.RSS.CHANNEL[0].ITEM[0].LINK[0];
       });
     });
