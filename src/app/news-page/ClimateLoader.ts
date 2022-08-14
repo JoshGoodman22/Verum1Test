@@ -3,7 +3,7 @@ import { NewsSecData } from "./news-page.component";
 import * as xml2js from 'xml2js';
 
 export class ClimateLoader {
-  bbcRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/bbcrss.xml";
+  apRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/RSSFeeds/Trending/Climate/APclimate.xml";
   reutersRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/RSSFeeds/Trending/Climate/ReutersClimate.xml";
   unRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/RSSFeeds/Trending/Climate/unCLimate.xml";
   nyRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/1cab3f26db9668906ca6c691384b0bb85f11d37b/nyRss.xml";
@@ -25,7 +25,7 @@ export class ClimateLoader {
       Subheadline3link: "Loading..."
     }
 
-    this.getBBC(data);
+    this.getAP(data);
     this.getReuters(data);
     this.getUN(data);
     // this.getNY(data);
@@ -44,11 +44,11 @@ export class ClimateLoader {
     });
   }
 
-  getBBC(newsData: NewsSecData) {
-    this.http.get(this.bbcRss, { responseType: "text" }).subscribe((data) => {
+  getAP(newsData: NewsSecData) {
+    this.http.get(this.apRss, { responseType: "text" }).subscribe((data) => {
       const parser = new xml2js.Parser({ strict: false, trim: true });
       parser.parseString(data, (err, result) => {
-        newsData.Subheadline1 = "(BBC) " + result.RSS.CHANNEL[0].ITEM[0].TITLE[0];
+        newsData.Subheadline1 = "(AP) " + result.RSS.CHANNEL[0].ITEM[0].TITLE[0];
         newsData.Subheadline1link = result.RSS.CHANNEL[0].ITEM[0].LINK[0];
       });
     });
