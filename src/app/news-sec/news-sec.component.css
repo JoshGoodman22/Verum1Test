@@ -2,13 +2,17 @@
     color: rgb(0, 0, 0);
     margin-left: 60px;
     font-size: 33px;
-    font-family: 'Times', Courier, monospace;
+    font-family: 'Garamond';
+    font-style: none;
+    text-decoration: none;
+    color: black;
 }
 
 .Heading-Bar {
     margin-top: -50px;
     margin-left: 3px;
     width: 220px;
+    background-color:black;
 }
 .Full-Panel
 {
@@ -39,10 +43,12 @@
 
 .Left p {
     font-weight: bold;
-    font-family: 'Times', Courier, monospace;
+    font-family: 'Garamond';
     font-size: 24px;
     color: black;
     text-align: center;
+    text-decoration: none;
+    font-style: none;
 }
 
 .Right
@@ -60,12 +66,14 @@
     font-weight: bold;
     color: rgb(35, 35, 34);
     margin-bottom: 60px;
+    font-family: 'Garamond';
 }
 
 .Sep
 {
     width: 800px;
     margin-bottom: 50px;
+    background-color:rgba(53, 61, 79, 0.43);
 }
 
 .crop-image {
@@ -109,7 +117,7 @@ body{
 position: relative;
 font-style: italic;
 font-size: 25px;
-font-family: 'Garamond', 'sans-serif', 'Gill Sans';
+font-family: 'Garamond';
 margin-left: 30px;
 padding-top: 5px;
 text-align: center;
@@ -164,7 +172,7 @@ text-align: center;
     margin-left: 25px;
     width: 100px;
     height: 55px;
-    font-family: 'Times', 'Courier', 'monospace';
+    font-family: 'Garamond', 'sans-serif', 'Gill Sans';
     text-decoration: none;
 }
 
@@ -193,7 +201,7 @@ text-align: center;
     margin-left: 25px;
     width: 100px;
     height: 55px;   
-    font-family: 'Times', 'Courier', 'monospace';
+    font-family: 'Garamond', 'sans-serif', 'Gill Sans';
     text-decoration: none;
 }
 
@@ -216,6 +224,12 @@ text-align: center;
     margin-left: 25px;
     width: 100px;
     height: 55px; 
-    font-family: 'Times', Courier, monospace;
+    font-family: 'Garamond', 'sans-serif', 'Gill Sans';
     text-decoration: none;
+}
+
+a:any-link {
+    text-decoration: underline;
+    color: black;
+    text-decoration-color:#5D76A9;
 }

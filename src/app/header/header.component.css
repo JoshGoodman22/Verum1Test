@@ -6,40 +6,41 @@
     padding-bottom: 15px;
     white-space: nowrap;
     font-family: "Garamond";
-    background:  linear-gradient(90deg, rgba(231,231,240,1) 0%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(90deg, rgba(213,210,217,1) 4%, rgba(110,110,158,1) 100%);;
 }
+
 .top-header {
     position: relative;
     text-indent: 45px;
     font-size: 55px;
 }
+
 .left-to-right {
-    display:inline-block;
-    margin-left: 6px;
+    padding-right: 40px;
+    display: inline-block;
+    margin-left: -30px;
 }
 
-.NavPanel
-{
+.NavPanel {
     padding-top: 20px;
     display: inline-block;
 }
 
-body{
+body {
     margin: 1px;
 }
 
-.NewsHead
-{
-position: relative;
-font-style: italic;
-font-size: 25px;
-font-family: 'Garamond', 'sans-serif', 'Gill Sans';
-margin-left: 30px;
-padding-top: 5px;
-text-align: center;
+.NewsHead {
+    position: relative;
+    font-style: italic;
+    font-size: 25px;
+    font-family: 'Garamond';
+    margin-left: 30px;
+    padding-top: 5px;
+    text-align: center;
 }
-.MiddleBar
-{
+
+.MiddleBar {
     position: relative;
     width: 600px;
     margin-left: auto;
@@ -47,40 +48,25 @@ text-align: center;
     margin-top: 23px;
 }
 
-.Politics
-{
+.Politics {
     position: relative;
-    font-size: 17px;
+    font-size: 24px;
     padding: 15px 22px;
     background-color: #000000;
-    color:  rgb(224, 224, 224);
+    color: rgb(224, 224, 224);
     text-shadow: 2px 2px 8px #000000;
     margin-left: 370px;
     width: 100px;
     height: 55px;
     font-family: 'Times', 'Courier', 'monospace';
     text-decoration: none;
+    margin-right: 100px;
 
 }
-.Climate
-{
-    position: relative;
-    font-size: 17px;
-    padding: 15px 22px;
-    background-color: #000000;
-    color:  rgb(224, 224, 224);
-    text-shadow: 2px 2px 8px #000000;
-    margin-left: 25px;
-    width: 100px;
-    height: 55px;
-    font-family: 'Times', 'Courier', 'monospace';
-    text-decoration: none;
-}
 
-.Health
-{
+.Climate {
     position: relative;
-    font-size: 17px;
+    font-size: 24px;
     padding: 15px 22px;
     background-color: #000000;
     color: rgb(224, 224, 224);
@@ -90,70 +76,83 @@ text-align: center;
     height: 55px;
     font-family: 'Times', 'Courier', 'monospace';
     text-decoration: none;
+    margin-right: 100px;
 }
 
-.USNews
-{
+.Health {
     position: relative;
-    font-size: 17px;
+    font-size: 24 px;
     padding: 15px 22px;
     background-color: #000000;
-    color:  rgb(224, 224, 224);
+    color: rgb(224, 224, 224);
     text-shadow: 2px 2px 8px #000000;
     margin-left: 25px;
     width: 100px;
     height: 55px;
     font-family: 'Times', 'Courier', 'monospace';
     text-decoration: none;
+    margin-right: 100px;
 }
 
-.Stories
-{
-    font-size: 17px;
+.USNews {
+    position: relative;
+    font-size: 24px;
+    padding: 15px 22px;
+    background-color: #000000;
+    color: rgb(224, 224, 224);
+    text-shadow: 2px 2px 8px #000000;
+    margin-left: 25px;
+    width: 100px;
+    height: 55px;
+    font-family: 'Times', 'Courier', 'monospace';
+    text-decoration: none;
+    margin-right: 100px;
+}
+
+.Stories {
+    font-size: 24px;
     background-color: #000000;
     padding: 15px 22px;
     color: rgb(224, 224, 224);
     text-shadow: 2px 2px 8px #000000;
     margin-left: 25px;
     width: 100px;
-    height: 55px;   
+    height: 55px;
     font-family: 'Times', 'Courier', 'monospace';
     text-decoration: none;
+    margin-right: 100px;
 }
 
-.Logo
-{
+.Logo {
     position: relative;
-   width: 183px;
-   height: 183px;
-   float: left;
-   margin-top: 20px;
-   margin-left: 18px;
+    width: 183px;
+    height: 183px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 18px;
 
 }
 
 .Tabs a {
     position: relative;
     font-size: 17px;
-    background-color: black;
+    background-color:black;
     color: white;
     padding: 18px 29px;
     margin-left: 25px;
     width: 100px;
-    height: 55px; 
-    font-family: 'Times', Courier, monospace;
+    height: 55px;
+    font-family:'Garamond';
     text-decoration: none;
 }
 
-.Elim
-{
+.Elim {
     font-size: 29px;
     margin-top: 0px;
     text-decoration: underline;
     font-style: italic;
 }
 
-.NavPanelCon
-{
+.NavPanelCon {
     margin-top: 50px;
 }

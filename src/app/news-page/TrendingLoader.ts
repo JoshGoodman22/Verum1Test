@@ -5,7 +5,7 @@ import * as xml2js from 'xml2js';
 export class TrendingLoader {
   bbcRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/d28abc14d3a4f0d8bb1c6b34c5f6c914276f727b/src/assets/RSSFeeds/Trending/TrendBBCrss.xml";
   reutersRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/3468250383fe7198881f2bc0ef3909a993bc2aa5/src/assets/RSSFeeds/Trending/reutersrss.xml";
-  unRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/3468250383fe7198881f2bc0ef3909a993bc2aa5/src/assets/RSSFeeds/Trending/unRss.xml";
+  apRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/RSSFeeds/Trending/APTrend.xml";
   cbsRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/RSSFeeds/Trending/CBSTrend.xml";
 
 
@@ -27,7 +27,7 @@ export class TrendingLoader {
 
     this.getBBC(data);
     this.getReuters(data);
-    this.getUN(data);
+    this.getAP(data);
     this.getCBS(data);
 
     return data;
@@ -47,18 +47,18 @@ export class TrendingLoader {
     this.http.get(this.bbcRss, { responseType: "text" }).subscribe((data) => {
       const parser = new xml2js.Parser({ strict: false, trim: true });
       parser.parseString(data, (err, result) => {
-        newsData.Subheadline1 = "(BBC) " + result.RSS.CHANNEL[0].ITEM[0].TITLE[0];
-        newsData.Subheadline1link = result.RSS.CHANNEL[0].ITEM[0].LINK[0];
+        newsData.Subheadline1 = "(BBC) " + result.RSS.CHANNEL[0].ITEM[1].TITLE[0];
+        newsData.Subheadline1link = result.RSS.CHANNEL[0].ITEM[1].LINK [0];
       });
     });
   }
 
 
-  getUN(newsData: NewsSecData) {
-    this.http.get(this.unRss, { responseType: "text" }).subscribe((data) => {
+  getAP(newsData: NewsSecData) {
+    this.http.get(this.apRss, { responseType: "text" }).subscribe((data) => {
       const parser = new xml2js.Parser({ strict: false, trim: true });
       parser.parseString(data, (err, result) => {
-        newsData.Subheadline2 = "(UN) " + result.RSS.CHANNEL[0].ITEM[0].TITLE[0];
+        newsData.Subheadline2 = "(AP) " + result.RSS.CHANNEL[0].ITEM[0].TITLE[0];
         newsData.Subheadline2link = result.RSS.CHANNEL[0].ITEM[0].LINK[0];
       });
     });
