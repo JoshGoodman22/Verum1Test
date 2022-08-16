@@ -136,7 +136,7 @@ body {
 .Tabs a {
     position: relative;
     font-size: 17px;
-    background-color:black;
+    background-color:#21202d;
     color: white;
     padding: 18px 29px;
     margin-left: 25px;
@@ -151,6 +151,7 @@ body {
     margin-top: 0px;
     text-decoration: underline;
     font-style: italic;
+    color: #21202d;
 }
 
 .NavPanelCon {
