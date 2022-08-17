@@ -4,10 +4,10 @@ import * as xml2js from 'xml2js';
 
 export class ClimateLoader {
   apRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/RSSFeeds/Trending/Climate/APclimate.xml";
-  reutersRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/RSSFeeds/Trending/Climate/ReutersClimate.xml";
+  reutersRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/RSSFeeds/Trending/Climate/reutersClimate2.xml";
   unRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/RSSFeeds/Trending/Climate/unCLimate.xml";
   nyRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/1cab3f26db9668906ca6c691384b0bb85f11d37b/nyRss.xml";
-  natureRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/RSSFeeds/Trending/Climate/nature.xml"; 
+  natureRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/RSSFeeds/Trending/Climate/nature2.xml"; 
 
   constructor(private http: HttpClient) { }
 
@@ -38,7 +38,7 @@ export class ClimateLoader {
     this.http.get(this.reutersRss, { responseType: "text" }).subscribe((data) => {
       const parser = new xml2js.Parser({ strict: false, trim: true });
       parser.parseString(data, (err, result) => {
-        newsData.Subheadline2 = result.RSS.CHANNEL[0].ITEM[0].TITLE[0];
+        newsData.Subheadline2 = "(Reuters) " + result.RSS.CHANNEL[0].ITEM[0].TITLE[0];
         newsData.Subheadline2link = result.RSS.CHANNEL[0].ITEM[0].LINK[0];
       });
     });
@@ -81,7 +81,7 @@ export class ClimateLoader {
     this.http.get(this.natureRss, { responseType: "text" }).subscribe((data) => {
       const parser = new xml2js.Parser({ strict: false, trim: true });
       parser.parseString(data, (err, result) => {
-        newsData.Subheadline1 = "(Nature)" + result.RSS.CHANNEL[0].ITEM[0].TITLE[0];
+        newsData.Subheadline1 = "(Nature) " + result.RSS.CHANNEL[0].ITEM[0].TITLE[0];
         newsData.Subheadline1link = result.RSS.CHANNEL[0].ITEM[0].LINK[0];
         //  build program to get headline for this one
       });
