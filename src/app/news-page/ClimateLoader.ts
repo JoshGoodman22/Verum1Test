@@ -5,7 +5,7 @@ import * as xml2js from 'xml2js';
 export class ClimateLoader {
   apRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/RSSFeeds/Trending/Climate/APclimate.xml";
   reutersRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/RSSFeeds/Trending/Climate/reutersClimate2.xml";
-  unRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/RSSFeeds/Trending/Climate/unCLimate.xml";
+  nbcRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/RSSFeeds/Trending/Climate/ncbClimate2.xml";
   nyRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/1cab3f26db9668906ca6c691384b0bb85f11d37b/nyRss.xml";
   natureRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/RSSFeeds/Trending/Climate/nature2.xml"; 
 
@@ -27,7 +27,7 @@ export class ClimateLoader {
 
     this.getAP(data);
     this.getReuters(data);
-    this.getUN(data);
+    this.getNBC(data);
     // this.getNY(data);
     this.getNature(data);
 
@@ -55,13 +55,13 @@ export class ClimateLoader {
   }
 
 
-  getUN(newsData: NewsSecData) {
-    this.http.get(this.unRss, { responseType: "text" }).subscribe((data) => {
+  getNBC(newsData: NewsSecData) {
+    this.http.get(this.nbcRss, { responseType: "text" }).subscribe((data) => {
       const parser = new xml2js.Parser({ strict: false, trim: true });
       parser.parseString(data, (err, result) => {
-        newsData.mainImgDec = "(UN) " + result.RSS.CHANNEL[0].ITEM[0].TITLE[0];
+        newsData.mainImgDec = "(NBC) " + result.RSS.CHANNEL[0].ITEM[0].TITLE[0];
         newsData.mainImgDeclink = result.RSS.CHANNEL[0].ITEM[0].LINK[0];
-        newsData.Subheadline3 = "(UN) " + result.RSS.CHANNEL[0].ITEM[1].TITLE[0];
+        newsData.Subheadline3 = "(NBC) " + result.RSS.CHANNEL[0].ITEM[1].TITLE[0];
         newsData.Subheadline3link = result.RSS.CHANNEL[0].ITEM[1].LINK[0];
       });
     });
