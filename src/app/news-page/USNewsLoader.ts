@@ -3,10 +3,10 @@ import { NewsSecData } from "./news-page.component";
 import * as xml2js from 'xml2js';
 
 export class USNewsLoader {
-  cbsRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/RSSFeeds/Trending/US%20News/cbsUS.xml";
-  reutersRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/RSSFeeds/Trending/US%20News/reutersUSN.xml";
-  unRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/3468250383fe7198881f2bc0ef3909a993bc2aa5/src/assets/RSSFeeds/Trending/unRss.xml";
-  econRss: string= "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/RSSFeeds/Trending/US%20News/USecon.xml";
+  apRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/RSSFeeds/Trending/US%20News/APUS2.xml";
+  reutersRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/RSSFeeds/Trending/US%20News/reutersUS2.xml";
+  axRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/RSSFeeds/Trending/US%20News/AxiosUS2.xml";
+  nnRss: string= "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/RSSFeeds/Trending/US%20News/NewsNation2.xml";
 
   constructor(private http: HttpClient) { }
 
@@ -26,9 +26,9 @@ export class USNewsLoader {
 
     // this.getBBC(data);
     this.getReuters(data);
-    this.getUN(data);
-    this.getEcon(data);
-    this.getCBS(data)
+    this.getAxios(data);
+    this.getNewsNation(data);
+    this.getAP(data)
 
     return data;
   }
@@ -43,35 +43,33 @@ export class USNewsLoader {
     });
   }
 
-  getCBS(newsData: NewsSecData) {
-    this.http.get(this.cbsRss, { responseType: "text" }).subscribe((data) => {
+  getAP(newsData: NewsSecData) {
+    this.http.get(this.apRss, { responseType: "text" }).subscribe((data) => {
       const parser = new xml2js.Parser({ strict: false, trim: true });
       parser.parseString(data, (err, result) => {
-        newsData.Subheadline1 = "(CBS) " + result.RSS.CHANNEL[0].ITEM[0].TITLE[0];
+        newsData.Subheadline1 = "(AP) " + result.RSS.CHANNEL[0].ITEM[0].TITLE[0];
         newsData.Subheadline1link = result.RSS.CHANNEL[0].ITEM[0].LINK[0];
       });
     });
   }
 
 
-  getUN(newsData: NewsSecData) {
-    this.http.get(this.unRss, { responseType: "text" }).subscribe((data) => {
+  getAxios(newsData: NewsSecData) {
+    this.http.get(this.axRss, { responseType: "text" }).subscribe((data) => {
       const parser = new xml2js.Parser({ strict: false, trim: true });
       parser.parseString(data, (err, result) => {
-        newsData.Subheadline2 = "(UN) " + result.RSS.CHANNEL[0].ITEM[0].TITLE[0];
+        newsData.Subheadline2 = "(Axios) " + result.RSS.CHANNEL[0].ITEM[0].TITLE[0];
         newsData.Subheadline2link = result.RSS.CHANNEL[0].ITEM[0].LINK[0];
       });
     });
   }
 
-  getEcon(newsData: NewsSecData) {
-    this.http.get(this.econRss, { responseType: "text" }).subscribe((data) => {
+  getNewsNation(newsData: NewsSecData) {
+    this.http.get(this.nnRss, { responseType: "text" }).subscribe((data) => {
       const parser = new xml2js.Parser({ strict: false, trim: true });
       parser.parseString(data, (err, result) => {
-        newsData.mainImgDec = "(The Economist) " + result.RSS.CHANNEL[0].ITEM[0].TITLE[0];
+        newsData.mainImgDec = "(News Nation) " + result.RSS.CHANNEL[0].ITEM[0].TITLE[0];
         newsData.mainImgDeclink = result.RSS.CHANNEL[0].ITEM[0].LINK[0];
-        newsData.Subheadline2 = "(The Economist) " + result.RSS.CHANNEL[0].ITEM[1].TITLE[0];
-        newsData.Subheadline2link = result.RSS.CHANNEL[0].ITEM[1].LINK[0];
       });
     });
   }
