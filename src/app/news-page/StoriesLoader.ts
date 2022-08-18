@@ -36,8 +36,8 @@ export class StoriesLoader {
     this.http.get(this.migrantsRss, { responseType: "text" }).subscribe((data) => {
       const parser = new xml2js.Parser({ strict: false, trim: true });
       parser.parseString(data, (err, result) => {
-        newsData.mainImgDec = "(Migrants & Refugees) " + result.RSS.CHANNEL[0].ITEM[0].TITLE[0];
-        newsData.mainImgDeclink = result.RSS.CHANNEL[0].ITEM[0].LINK[0];
+        newsData.mainImgDec = "(Migrants & Refugees) " + result.RSS.CHANNEL[0].ITEM[4].TITLE[0];
+        newsData.mainImgDeclink = result.RSS.CHANNEL[0].ITEM[4].LINK[0];
       });
     });
   }

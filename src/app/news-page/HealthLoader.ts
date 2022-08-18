@@ -3,9 +3,9 @@ import { NewsSecData } from "./news-page.component";
 import * as xml2js from 'xml2js';
 
 export class HealthLoader {
-  axRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/RSSFeeds/Trending/Health/axioshealth.xml";
-  reutersRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/RSSFeeds/Trending/Health/reutershealth.xml";
-  unRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/RSSFeeds/Trending/Health/UNhealth.xml";
+  axRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/RSSFeeds/Trending/Health/AxiosHealth2.xml";
+  reutersRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/RSSFeeds/Trending/Health/ReutersHealth2.xml";
+  unRss: string = "";
   cbsRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/RSSFeeds/Trending/Health/CBShealth.xml";
 
   constructor(private http: HttpClient) { }
@@ -36,8 +36,8 @@ export class HealthLoader {
     this.http.get(this.reutersRss, { responseType: "text" }).subscribe((data) => {
       const parser = new xml2js.Parser({ strict: false, trim: true });
       parser.parseString(data, (err, result) => {
-        newsData.mainImgDec = result.RSS.CHANNEL[0].ITEM[0].TITLE[0];
-        newsData.mainImgDeclink = result.RSS.CHANNEL[0].ITEM[0].LINK[0];
+        newsData.mainImgDec = "(Reuters) " + result.RSS.CHANNEL[0].ITEM[1].TITLE[0];
+        newsData.mainImgDeclink = result.RSS.CHANNEL[0].ITEM[1].LINK[0];
       });
     });
   }
