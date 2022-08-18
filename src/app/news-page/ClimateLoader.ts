@@ -3,7 +3,7 @@ import { NewsSecData } from "./news-page.component";
 import * as xml2js from 'xml2js';
 
 export class ClimateLoader {
-  apRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/RSSFeeds/Trending/Climate/APclimate.xml";
+  apRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/RSSFeeds/Trending/Climate/APclimate2.xml";
   reutersRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/RSSFeeds/Trending/Climate/reutersClimate2.xml";
   nbcRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/RSSFeeds/Trending/Climate/ncbClimate2.xml";
   nyRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/1cab3f26db9668906ca6c691384b0bb85f11d37b/nyRss.xml";
@@ -48,8 +48,8 @@ export class ClimateLoader {
     this.http.get(this.apRss, { responseType: "text" }).subscribe((data) => {
       const parser = new xml2js.Parser({ strict: false, trim: true });
       parser.parseString(data, (err, result) => {
-        newsData.Subheadline1 = "(AP) " + result.RSS.CHANNEL[0].ITEM[0].TITLE[0];
-        newsData.Subheadline1link = result.RSS.CHANNEL[0].ITEM[0].LINK[0];
+        newsData.mainImgDec = "(AP) " + result.RSS.CHANNEL[0].ITEM[0].TITLE[0];
+        newsData.mainImgDeclink = result.RSS.CHANNEL[0].ITEM[0].LINK[0]
       });
     });
   }
@@ -58,9 +58,7 @@ export class ClimateLoader {
   getNBC(newsData: NewsSecData) {
     this.http.get(this.nbcRss, { responseType: "text" }).subscribe((data) => {
       const parser = new xml2js.Parser({ strict: false, trim: true });
-      parser.parseString(data, (err, result) => {
-        newsData.mainImgDec = "(NBC) " + result.RSS.CHANNEL[0].ITEM[0].TITLE[0];
-        newsData.mainImgDeclink = result.RSS.CHANNEL[0].ITEM[0].LINK[0];
+      parser.parseString(data, (err, result) => {;
         newsData.Subheadline3 = "(NBC) " + result.RSS.CHANNEL[0].ITEM[1].TITLE[0];
         newsData.Subheadline3link = result.RSS.CHANNEL[0].ITEM[1].LINK[0];
       });

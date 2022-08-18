@@ -3,10 +3,10 @@ import { NewsSecData } from "./news-page.component";
 import * as xml2js from 'xml2js';
 
 export class StoriesLoader {
-  hrRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/RSSFeeds/Trending/Global%20Stories/HR.xml";
-  migrantsRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/RSSFeeds/Trending/Global%20Stories/Migrants.xml";
-  haRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/RSSFeeds/Trending/Global%20Stories/HA.xml";
-  womenRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/RSSFeeds/Trending/Global%20Stories/Women.xml";
+  hrRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/RSSFeeds/Trending/Global%20Stories/HR2.xml";
+  migrantsRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/RSSFeeds/Trending/Global%20Stories/Migrants2.xml";
+  haRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/RSSFeeds/Trending/Global%20Stories/HA2.xml";
+  womenRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/RSSFeeds/Trending/Global%20Stories/Women2.xml";
 
   constructor(private http: HttpClient) { }
 
