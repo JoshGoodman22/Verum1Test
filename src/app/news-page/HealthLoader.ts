@@ -5,8 +5,8 @@ import * as xml2js from 'xml2js';
 export class HealthLoader {
   axRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/RSSFeeds/Trending/Health/AxiosHealth2.xml";
   reutersRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/RSSFeeds/Trending/Health/ReutersHealth2.xml";
-  unRss: string = "";
-  cbsRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/RSSFeeds/Trending/Health/CBShealth.xml";
+  unRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/RSSFeeds/Trending/Health/UNHealth2.xml";
+  apRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/RSSFeeds/Trending/Health/APHealth2.xml";
 
   constructor(private http: HttpClient) { }
 
@@ -27,7 +27,7 @@ export class HealthLoader {
     this.getAxios(data);
     this.getReuters(data);
     this.getUN(data);
-    this.getCBS(data);
+    this.getAP(data);
 
     return data;
   }
@@ -57,14 +57,14 @@ export class HealthLoader {
     this.http.get(this.unRss, { responseType: "text" }).subscribe((data) => {
       const parser = new xml2js.Parser({ strict: false, trim: true });
       parser.parseString(data, (err, result) => {
-        newsData.Subheadline2 = "(UN) " + result.RSS.CHANNEL[0].ITEM[0].TITLE[0];
-        newsData.Subheadline2link = result.RSS.CHANNEL[0].ITEM[0].LINK[0];
+        newsData.Subheadline2 = "(UN) " + result.RSS.CHANNEL[0].ITEM[4].TITLE[0];
+        newsData.Subheadline2link = result.RSS.CHANNEL[0].ITEM[4].LINK[0];
       });
     });
   }
 
-  getCBS(newsData: NewsSecData) {
-    this.http.get(this.cbsRss, { responseType: "text" }).subscribe((data) => {
+  getAP(newsData: NewsSecData) {
+    this.http.get(this.apRss, { responseType: "text" }).subscribe((data) => {
       const parser = new xml2js.Parser({ strict: false, trim: true });
       parser.parseString(data, (err, result) => {
         newsData.Subheadline3 = "(CBS) " + result.RSS.CHANNEL[0].ITEM[0].TITLE[0];
