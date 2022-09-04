@@ -8,6 +8,11 @@ import { NewsSecComponent } from './news-sec/news-sec.component';
 import { NewsPageComponent } from './news-page/news-page.component';
 import { SignInPageComponent } from './sign-in-page/sign-in-page.component';
 import { ModalComponent } from './modal/modal.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatDialogModule} from '@angular/material/dialog';
+import { RealsComponent } from './reals/reals.component';
+import { DonationsComponent } from './donations/donations.component';
+import { MissionComponent } from './mission/mission.component';
 
 @NgModule({
   declarations: [
@@ -16,11 +21,16 @@ import { ModalComponent } from './modal/modal.component';
     NewsSecComponent,
     NewsPageComponent,
     SignInPageComponent,
-    ModalComponent
+    ModalComponent,
+    RealsComponent,
+    DonationsComponent,
+    MissionComponent
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MatDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

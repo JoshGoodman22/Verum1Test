@@ -4,7 +4,7 @@ import * as xml2js from 'xml2js';
 
 export class USNewsLoader {
   apRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/RSSFeeds/Trending/US%20News/APUS2.xml";
-  reutersRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/RSSFeeds/Trending/US%20News/reutersUS2.xml";
+  reutersRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/RSSFeeds/Trending/US%20News/ReutersUS22.xml";
   axRss: string = "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/RSSFeeds/Trending/US%20News/AxiosUS2.xml";
   nnRss: string= "https://raw.githubusercontent.com/JoshGoodman22/Verum1Test/master/src/assets/RSSFeeds/Trending/US%20News/NewsNation2.xml";
 
@@ -37,7 +37,7 @@ export class USNewsLoader {
     this.http.get(this.reutersRss, { responseType: "text" }).subscribe((data) => {
       const parser = new xml2js.Parser({ strict: false, trim: true });
       parser.parseString(data, (err, result) => {
-        newsData.Subheadline3 = result.RSS.CHANNEL[0].ITEM[1].TITLE[0];
+        newsData.Subheadline3 = "(Reuters) " + result.RSS.CHANNEL[0].ITEM[1].TITLE[0];
         newsData.Subheadline3link= result.RSS.CHANNEL[0].ITEM[1].LINK[0];
       });
     });

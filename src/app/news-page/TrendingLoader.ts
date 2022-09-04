@@ -33,6 +33,16 @@ export class TrendingLoader {
     return data;
   }
 
+  getImage(newsData: NewsSecData) {
+    this.http.get(this.reutersRss, { responseType: "text" }).subscribe((data) => {
+      const parser = new xml2js.Parser({ strict: false, trim: true });
+      parser.parseString(data, (err, result) => {
+        newsData.mainImgDec = "(Reuters) " + result.RSS.CHANNEL[0].ITEM[0].IMAGE[0];
+        newsData.mainImgDeclink = result.RSS.CHANNEL[0].ITEM[0].LINK[0];
+      });
+    });
+  }
+
   getReuters(newsData: NewsSecData) {
     this.http.get(this.reutersRss, { responseType: "text" }).subscribe((data) => {
       const parser = new xml2js.Parser({ strict: false, trim: true });

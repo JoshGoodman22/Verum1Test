@@ -13,7 +13,7 @@
     margin-left: 3px;
     width: 220px;
     background-color:black;
-    height: 2px;
+    height: 1px;
 }
 .Full-Panel
 {
@@ -45,7 +45,7 @@
 .Left p {
     font-weight: bold;
     font-family: 'Garamond';
-    font-size: 24px;
+    font-size: 20px;
     color: black;
     text-align: center;
     text-decoration: none;
@@ -233,5 +233,5 @@ text-align: center;
 a:any-link {
     text-decoration: underline;
     color: black;
-    text-decoration-color:#5D76A9;
+    text-decoration-color: #496fbd;
 }

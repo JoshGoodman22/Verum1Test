@@ -6,7 +6,7 @@
     padding-bottom: 15px;
     white-space: nowrap;
     font-family: "Garamond";
-    background: linear-gradient(90deg, rgba(231, 231, 240, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    background: linear-gradient(90deg, rgba(131,163,207,1) 33%, rgba(13,70,135,1) 100%);
 }
 
 .top-header {
@@ -23,6 +23,7 @@
 .NavPanel {
     padding-top: 20px;
     display: inline-block;
+    margin-top: 18px;
 }
 
 body {
@@ -51,11 +52,11 @@ body {
 
 .Politics {
     position: relative;
-    font-size: 24px;
+    font-size: 20px;
     padding: 15px 22px;
-    background: #5D76A9;
+    background-color:#879dba;
     color: white;
-    margin-left: 200px;
+    margin-left: 250px;
     width: 100px;
     height: 55px;
     font-family: 'Garamond';
@@ -67,9 +68,9 @@ body {
 
 .Climate {
     position: relative;
-    font-size: 24px;
+    font-size: 20px;
     padding: 15px 22px;
-    background-color:#5D76A9;
+    background-color:#879dba;
     color: white;
     margin-left: 25px;
     width: 100px;
@@ -82,9 +83,9 @@ body {
 
 .Health {
     position: relative;
-    font-size: 24px;
+    font-size: 20px;
     padding: 15px 22px;
-    background-color:#5D76A9;
+    background-color:#879dba;
     color: white;
     margin-left: 25px;
     width: 100px;
@@ -97,9 +98,9 @@ body {
 
 .USNews {
     position: relative;
-    font-size: 24px;
+    font-size: 20px;
     padding: 15px 22px;
-    background-color:#5D76A9;
+    background-color:#879dba;
     color: white;
     margin-left: 25px;
     width: 100px;
@@ -111,8 +112,8 @@ body {
 }
 
 .Stories {
-    font-size: 24px;
-    background-color:#5D76A9;
+    font-size: 20px;
+    background-color:#879dba;
     padding: 15px 22px;
     color: white;
     margin-left: 25px;
@@ -148,5 +149,18 @@ body {
 
 .headlines {
     text-decoration: none;
+
+}
+
+.Feedback
+{
+    position: relative;
+    font-style: italic;
+    font-size: 25px;
+    font-family: 'Garamond',;
+    margin-left: 30px;
+    padding-top: 5px;
+    text-align: center;
+    text-decoration: underline;
 
 }

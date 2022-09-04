@@ -1,27 +1,31 @@
 .topbar {
-    position: relative;
+    display: flex;
     margin: 0;
     padding-right: 180px;
     padding-top: 5px;
-    padding-bottom: 15px;
+    padding-bottom: 0px;
     white-space: nowrap;
     font-family: "Garamond";
-    background: linear-gradient(90deg, rgba(213,210,217,1) 4%, rgba(110,110,158,1) 100%);;
+    background: linear-gradient(90deg, rgba(135,157,186,1) 59%, rgba(16,75,143,1) 100%);
 }
 
 .top-header {
+    flex-direction: column;
     position: relative;
     text-indent: 45px;
-    font-size: 55px;
+    font-size: 60px;
 }
 
 .left-to-right {
+    flex-direction: column;
     padding-right: 40px;
     display: inline-block;
-    margin-left: -30px;
+    margin-left: -14px;
+    margin-top: 60px;
 }
 
 .NavPanel {
+    flex-direction: column;
     padding-top: 20px;
     display: inline-block;
 }
@@ -134,9 +138,10 @@ body {
 }
 
 .Tabs a {
+    flex-direction: column;
     position: relative;
-    font-size: 17px;
-    background-color:#21202d;
+    font-size: 19px;
+    background-color:#1f3151;
     color: white;
     padding: 18px 29px;
     margin-left: 25px;
