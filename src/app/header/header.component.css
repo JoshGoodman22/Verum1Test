@@ -7,6 +7,7 @@
     white-space: nowrap;
     font-family: "Garamond";
     background: linear-gradient(90deg, rgba(135,157,186,1) 59%, rgba(16,75,143,1) 100%);
+    flex-direction: column;
 }
 
 .top-header {
@@ -17,11 +18,12 @@
 }
 
 .left-to-right {
-    flex-direction: column;
+    display: flex;
     padding-right: 40px;
-    display: inline-block;
-    margin-left: -14px;
-    margin-top: 60px;
+    flex-direction: row;
+    margin-left: 115px;
+    margin-top: -71px;
+    flex-direction: row;
 }
 
 .NavPanel {
@@ -128,28 +130,33 @@ body {
 }
 
 .Logo {
-    position: relative;
-    width: 183px;
-    height: 183px;
-    float: left;
-    margin-top: 20px;
-    margin-left: 18px;
+    flex-direction: row;
+    width: 200px;
+    height: 200px;
+    margin-left: -44px;
+    margin-top: -15px;
 
 }
 
 .Tabs a {
     flex-direction: column;
     position: relative;
-    font-size: 19px;
-    background-color:#1f3151;
-    color: white;
-    padding: 18px 29px;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    padding: 16px 26px;
     margin-left: 25px;
-    width: 100px;
-    height: 55px;
+    width: 57px;
+    height: 22px;
     font-family:'Garamond';
+    font-weight: bold;
     text-decoration: none;
-    border-radius: 5px;
+    letter-spacing: .5mm;
+    margin: 0px;
+}
+
+.navmen
+{
+    margin:auto;
 }
 
 .Elim {
